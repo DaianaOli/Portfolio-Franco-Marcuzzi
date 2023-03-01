@@ -2,7 +2,7 @@ import React from "react";
 
 const LandingPage = () => {
   return (
-    <section id="about">
+    <section id="home">
     <div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center">
       <div className="bg-slate-500 lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
        {/* <--------------------ACA VA TU CODIGO-----------> */}
