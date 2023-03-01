@@ -65,26 +65,26 @@ function NavBar() {
                         <div className="hidden sm:block sm:ml-6 ">
                             <div className="flex space-x-4">
                                 <a
-                                    href="home"
+                                    href="#home"
                                     className="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium"
                                     aria-current="page"
                                 >
                                     Home
                                 </a>
                                 <a
-                                    href="about"
+                                    href="#about"
                                     className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                                 >
                                     About
                                 </a>
                                 <a
-                                    href="proyects"
+                                    href="#proyects"
                                     className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                                 >
                                     Proyects
                                 </a>
                                 <a
-                                    href="contact"
+                                    href="#contact"
                                     className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                                 >
                                     Contact
