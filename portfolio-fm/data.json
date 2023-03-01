@@ -1,0 +1,81 @@
+{
+    "data" : [
+        {
+            "id" : 1,
+            "nombre" : "",
+            "apellido" : "",
+            "email" : "",
+            "telefono" : "",
+            "direccion" : "",
+            "edad" : "",
+            "descripcion": "",
+            "proyectos" :[
+                {
+                    "id" : 1,
+                    "nombre" : "",
+                    "descripcion" : "",
+                    "fecha_inicio" : "",
+                    "fecha_fin" : "",
+                    "estado" : ""
+                },
+                {
+                    "id" : 2,
+                    "nombre" : "",
+                    "descripcion" : "",
+                    "fecha_inicio" : "",
+                    "fecha_fin" : "",
+                    "estado" : ""
+                }
+            ],
+            "imagen" : "",
+            "imagen2" : "",
+            "idiomas" :"",
+            "lenguajes_programacion" : [
+                {
+                    "id" : 1,
+                    "nombre" : "",
+                    "logo" :"" 
+                },
+                {
+                    "id" : 2,
+                    "nombre" : "",
+                    "logo" :""
+                }
+            ],
+            "experiencia_laboral" : [
+                {
+                    "id" : 1,
+                    "nombre" : "",
+                    "descripcion" : "",
+                    "fecha_inicio" : "",
+                    "fecha_fin" : ""
+                },
+                {
+                    "id" : 2,
+                    "nombre" : "",
+                    "descripcion" : "",
+                    "fecha_inicio" : "",
+                    "fecha_fin" : ""
+                }
+            ],
+            "experiencia_personal" : [
+                {
+                    "id" : 1,
+                    "nombre" : "",
+                    "descripcion" : "",
+                    "fecha_inicio" : "",
+                    "fecha_fin" : "",
+                    "estado" : ""
+                },
+                {
+                    "id" : 2,
+                    "nombre" : "",
+                    "descripcion" : "",
+                    "fecha_inicio" : "",
+                    "fecha_fin" : "",
+                    "estado" : ""
+                }
+            ]
+        }
+    ]
+}
