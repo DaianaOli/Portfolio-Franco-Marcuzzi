@@ -1,79 +1,125 @@
 {
-    "data" : [
+    "data": [
         {
-            "id" : 1,
-            "nombre" : "",
-            "apellido" : "",
-            "email" : "",
-            "telefono" : "",
-            "direccion" : "",
-            "edad" : "",
-            "descripcion": "",
-            "proyectos" :[
+            "id": 1,
+            "nombre": "Franco",
+            "apellido": "Marcuzzi",
+            "email": "FrancoArielMarcuzzi@hotmail.com",
+            "edad": "29",
+            "descripcion": "Autodidacta, mientras tenga internet siempre estoy viendo que temas relacionados a la computación puedo aprender, esto me ha llevado siempre a hacer un poco de todo y no especializándome en nada en particular en relación a la programación. Como resultado  me dio la posibilidad de cambiar y adaptarme de un sistema  a otro con rapidez, no soy fanático de ningún lenguaje ni sistema en particular",
+            "proyectos": [
                 {
-                    "id" : 1,
-                    "nombre" : "",
-                    "descripcion" : "",
-                    "fecha_inicio" : "",
-                    "fecha_fin" : "",
-                    "estado" : ""
+                    "id": 1,
+                    "nombre": "Sistema de control hornos industriales",
+                    "descripcion": "Se programo un micro-controlador arduino para hacer de controlador de un horno electrico permitiendo controlar su temperatura.",
+                    "fecha_inicio": "2013-02-08",
+                    "fecha_fin": "2014-10-24",
+                    "estado": "Completado"
                 },
                 {
-                    "id" : 2,
-                    "nombre" : "",
-                    "descripcion" : "",
-                    "fecha_inicio" : "",
-                    "fecha_fin" : "",
-                    "estado" : ""
+                    "id": 2,
+                    "nombre": "Prototipo de gestion y control de prensas hidraulicas.",
+                    "descripcion": "Se programo un micro-controlador arduino para gestionar la operacion y trabajo mediante sensores magneticos de una prensa hidraulica,utilizada en la fabricacion de puertas",
+                    "fecha_inicio": "2014-02-04",
+                    "fecha_fin": "2014-03-07",
+                    "estado": "Prototipo"
                 }
             ],
-            "imagen" : "",
-            "imagen2" : "",
-            "idiomas" :"",
-            "lenguajes_programacion" : [
+            "imagen": "Esto Dario fijate como guardar una imagen en el back y manda su direccion aqui o fijate de que manera administrarlo.",
+            "imagen2": "",
+            "idiomas": [
                 {
-                    "id" : 1,
-                    "nombre" : "",
-                    "logo" :"" 
+                    "lengua": "Español",
+                    "estado": "Hablante"
                 },
                 {
-                    "id" : 2,
-                    "nombre" : "",
-                    "logo" :""
+                    "lengua": "Ingles",
+                    "estado": "Estudiando"
+                },
+                {
+                    "lengua": "Italiano",
+                    "estado": "Estudiando"
                 }
             ],
-            "experiencia_laboral" : [
+            "lenguajes_programacion": [
                 {
-                    "id" : 1,
-                    "nombre" : "",
-                    "descripcion" : "",
-                    "fecha_inicio" : "",
-                    "fecha_fin" : ""
+                    "id": 1,
+                    "nombre": "C#",
+                    "experiencia": "C# Utilizando tecnologías como entity framework, en la construcción de micro-servicios.",
+                    "logo": "Mismo que en imagen"
                 },
                 {
-                    "id" : 2,
-                    "nombre" : "",
-                    "descripcion" : "",
-                    "fecha_inicio" : "",
-                    "fecha_fin" : ""
+                    "id": 2,
+                    "nombre": "Java",
+                    "experiencia": "En mi inicio en la programación utilizado para construir interfaces mediante la librería Swing. Actualmente utilizado para programar bajo tecnologías Android",
+                    "logo": "Mismo que en imagen"
+                },
+                {
+                    "id": 3,
+                    "nombre": "Javascript",
+                    "experiencia": "Utilizado a para la contruccion de BFF(back-for-front) para el desarrollo de arquitecturas de micro-servicios.",
+                    "logo": "Mismo que en imagen"
+                },
+                {
+                    "id": 4,
+                    "nombre": "SQL",
+                    "experiencia": "Como lenguaje base para programar logica de negocio en la creacion de STORE-PROCEDURE",
+                    "logo": "Mismo que en imagen"
+                },
+                {
+                    "id": 5,
+                    "nombre": "Android Native",
+                    "experiencia": "Maquetado de pantallas android.",
+                    "logo": "Mismo que en imagen"
                 }
             ],
-            "experiencia_personal" : [
+            "experiencia_laboral": [
                 {
-                    "id" : 1,
-                    "nombre" : "",
-                    "descripcion" : "",
-                    "fecha_inicio" : "",
-                    "fecha_fin" : "",
-                    "estado" : ""
+                    "id": 1,
+                    "nombre": "Maestro de robotica para los cursos de 5to y 6to grdo",
+                    "descripcion": "Trabaje como profesor en el Plan Nacional de Robótica  AREYA, el cual estaba contemplado para los alumnos 5to y 6to año de escuela primaria",
+                    "fecha_inicio": "2019-01-01",
+                    "fecha_fin": "2019-12-31"
                 },
                 {
-                    "id" : 2,
-                    "nombre" : "",
-                    "descripcion" : "",
-                    "fecha_inicio" : "",
-                    "fecha_fin" : "",
-                    "estado" : ""
+                    "id": 2,
+                    "nombre": "Desarrollador free-lance y luego como empleado en un software factory llamada Squad",
+                    "descripcion": "Como desarrollador de diferentes proyectos utilizando varias de mi perfil tecnologias",
+                    "fecha_inicio": "2020-01-01",
+                    "fecha_fin": "2021-06-01"
+                },
+                {
+                    "id": 3,
+                    "nombre": "Desarrollador empleado por Galicia-Seguros",
+                    "descripcion": "Actualmente trabajando para Galicia-Seguros en la creacion de plataformas orientas al manejo de seguros.",
+                    "fecha_inicio": "2020-01-01",
+                    "fecha_fin": ""
+                }
+            ],
+            "experiencia_cursos": [
+                {
+                    "id": 1,
+                    "empresa": "Alkemy",
+                    "descripcion": "Realice un curso de aceleración de una empresa llamada Alkemy donde se llevó a cabo la construcción de un sitio Web utilizando tecnologías de .NET",
+                    "fecha_inicio": "2021-01-01",
+                    "fecha_fin": "2021-03-01",
+                    "estado": "Terminado"
+                },
+                {
+                    "id": 2,
+                    "empresa": "Coder House",
+                    "descripcion": "Curso de Javascript",
+                    "fecha_inicio": "2022-07-01",
+                    "fecha_fin": "2022-09-01",
+                    "estado": "Terminado"
+                },
+                {
+                    "id": 3,
+                    "empresa": "Coder House",
+                    "descripcion": "Curso de React",
+                    "fecha_inicio": "2022-07-01",
+                    "fecha_fin": "2022-09-01",
+                    "estado": "Terminado"
                 }
             ]
         }

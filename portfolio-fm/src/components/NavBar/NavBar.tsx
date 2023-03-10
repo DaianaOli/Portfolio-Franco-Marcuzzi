@@ -69,25 +69,25 @@ function NavBar() {
                                     className="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium"
                                     aria-current="page"
                                 >
-                                    Home
+                                    Menu
                                 </a>
                                 <a
                                     href="#about"
                                     className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                                 >
-                                    About
+                                    Sobre mi
                                 </a>
                                 <a
                                     href="#proyects"
                                     className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                                 >
-                                    Proyects
+                                    Proyectos
                                 </a>
                                 <a
                                     href="#contact"
                                     className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                                 >
-                                    Contact
+                                    Contacto
                                 </a>
                             </div>
                         </div>
@@ -100,25 +100,25 @@ function NavBar() {
                         href="#home"
                         className="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
                     >
-                        Home
+                        Menu
                     </a>
                     <a
                         href="#about"
                         className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                     >
-                        About
+                        Sobre mi
                     </a>
                     <a
                         href="#proyects"
                         className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                     >
-                        Proyects
+                        Proyectos
                     </a>
                     <a
                         href="#contact"
                         className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                     >
-                        Contact
+                        Contacto
                     </a>
                 </div>
             </div>

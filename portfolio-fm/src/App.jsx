@@ -5,7 +5,8 @@ import Contact from './components/Contact/Contact'
 
 function App() {
   return (
-    <div className="App">
+    <div>
+    {/*<div id="google_translate_element">  ---para traductor---- */} 
     <NavBar/>
     <LandingPage/>
     <Contact/>
