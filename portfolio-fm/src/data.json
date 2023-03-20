@@ -45,32 +45,32 @@
                 {
                     "id": 1,
                     "nombre": "C#",
-                    "experiencia": "C# Utilizando tecnologías como entity framework, en la construcción de micro-servicios.",
-                    "logo": "Mismo que en imagen"
+                    "experiencia": "Utilizando tecnologías como entity framework, en la construcción de micro-servicios.",
+                    "logo": "https://img.icons8.com/color/256/c-sharp-logo.png"
                 },
                 {
                     "id": 2,
                     "nombre": "Java",
                     "experiencia": "En mi inicio en la programación utilizado para construir interfaces mediante la librería Swing. Actualmente utilizado para programar bajo tecnologías Android",
-                    "logo": "Mismo que en imagen"
+                    "logo": "https://cdn-icons-png.flaticon.com/512/5968/5968282.png"
                 },
                 {
                     "id": 3,
                     "nombre": "Javascript",
                     "experiencia": "Utilizado a para la contruccion de BFF(back-for-front) para el desarrollo de arquitecturas de micro-servicios.",
-                    "logo": "Mismo que en imagen"
+                    "logo": "https://cdn-icons-png.flaticon.com/512/5968/5968292.png"
                 },
                 {
                     "id": 4,
                     "nombre": "SQL",
                     "experiencia": "Como lenguaje base para programar logica de negocio en la creacion de STORE-PROCEDURE",
-                    "logo": "Mismo que en imagen"
+                    "logo": "https://cdn-icons-png.flaticon.com/512/5815/5815478.png"
                 },
                 {
                     "id": 5,
                     "nombre": "Android Native",
                     "experiencia": "Maquetado de pantallas android.",
-                    "logo": "Mismo que en imagen"
+                    "logo": "https://cdn-icons-png.flaticon.com/512/270/270780.png"
                 }
             ],
             "experiencia_laboral": [
