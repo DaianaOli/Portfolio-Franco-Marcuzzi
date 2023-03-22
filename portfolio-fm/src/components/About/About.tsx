@@ -35,16 +35,16 @@ const About = () => {
           </div>
         </div>
         <div className="p-3 flex flex-col gap-2">
-          <a className="underline underline-offset-8" href="#idiomas">
+          <a className="underline underline-offset-8" href="idiomas">
             Idiomas
           </a>
-          <a className="underline underline-offset-8" href="#lenguajes">
+          <a className="underline underline-offset-8" href="lenguajes">
             Lenguajes de programacion
           </a>
-          <a className="underline underline-offset-8" href="#experiencia">
+          <a className="underline underline-offset-8" href="experiencia">
             Experiencia laboral
           </a>
-          <a className="underline underline-offset-8" href="#cursos">
+          <a className="underline underline-offset-8" href="cursos">
             Cursos
           </a>
           <a href="">
