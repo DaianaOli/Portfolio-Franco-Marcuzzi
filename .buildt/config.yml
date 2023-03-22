@@ -1,8 +1,10 @@
 name: Portfolio-Franco-Marcuzzi
 id: 1301398b-db8c-4cc4-bc71-ce89d2ee6a15
-language: TypeScript
 extensions:
   - .ts
   - .cts
   - .mts
   - .tsx
+languages:
+  - TypeScript
+  - TSX

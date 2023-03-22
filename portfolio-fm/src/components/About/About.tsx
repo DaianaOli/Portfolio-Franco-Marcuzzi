@@ -1,90 +1,81 @@
-import React from "react";
-import data from "../../data.json";
+import { data } from "../../data.json";
+import {Link} from 'react-router-dom'
 
 const About = () => {
-    const {nombre,apellido, descripcion, edad, email, idiomas, lenguajes_programacion, } = data.data
-    console.log(nombre,apellido,descripcion, edad, email, idiomas, lenguajes_programacion)
+  const { nombre, apellido, descripcion, edad, email, imagen, github } = data;
+  const nombreCompleto = nombre + " " + apellido;
 
-    const idioma = idiomas.map((i)=>{
-        return (
-            <div className="flex gap">
-                <ul className="flex flex-row">
-                    <li>{i.lengua}</li>
-                    <li>{i.estado}</li>
-                </ul>
-            </div>
-        )
-    })
-
-    const lenguajes = lenguajes_programacion.map((l)=>{
-        return (
-            <div className="flex flex-row">
-                <h3>{l.nombre}</h3>
-                <p>{l.experiencia}</p>
-                <img src={l.logo} alt={l.nombre}/>
-            </div>
-        )
-    })
-
-
-    return (
-        <div className="overflow-hidden bg-white shadow sm:rounded-lg">
-        <div className="px-4 py-5 sm:px-6">
-          <h3 className="text-base font-semibold leading-6 text-gray-900">Sobre mi</h3>
-          <p className="mt-1 max-w-2xl text-sm text-gray-500">Informacion</p>
+  return (
+    <div id="about" className="relative flex justify-center items-center w-full flex-wrap ">
+    <div className="flex flex-col sm:flex-wrap md:flex-row items-center justify-center p-4">
+      <div className="flex flex-col font-semibold gap-3 w-full md:w-1/2 dark:text-white">
+        <h1>Sobre mi</h1>
+        <div className="bg-slate-400 dark:bg-gray-800 p-3 rounded-lg items-center justify-center text-center w-90% md:w-10/12">
+          <h2>
+            Soy {nombreCompleto}, tengo {edad} años. {descripcion}
+          </h2>
+          <hr className="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700" />
+          <h4>Podes comunicarte conmigo via</h4>
+          <div className="flex flex-row gap-2 items-center justify-center">
+            <a href={github} target="_blank" rel="noreferrer">
+              <img
+                className="w-12 h-12 dark:invert"
+                src="https://img.icons8.com/ios-filled/256/github.png"
+                alt="github"
+              />
+            </a>
+            <a
+              href={`mailto:${email}`} target="_blank" rel="noreferrer"
+            >
+              <img
+                className="w-12 h-12 dark:invert"
+                src="https://img.icons8.com/ios-filled/256/apple-mail.png"
+                alt="email"
+              />
+            </a>
+          </div>
         </div>
-        <div className="border-t border-gray-200">
-          <dl>
-            <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-              <dt className="text-sm font-medium text-gray-500">Nombre y Apellido</dt>
-              <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">{nombre + " "+ apellido}</dd>
-            </div>
-            <div className="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-              <dt className="text-sm font-medium text-gray-500">Soy</dt>
-              <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">Desarrollador Backend</dd>
-            </div>
-            <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-              <dt className="text-sm font-medium text-gray-500">Email</dt>
-              <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">{email}</dd>
-            </div>
-            <div className="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-              <dt className="text-sm font-medium text-gray-500">Edad</dt>
-              <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">{edad}</dd>
-            </div>
-            <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-              <dt className="text-sm font-medium text-gray-500">De mi</dt>
-              <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">
-                {descripcion}
-              </dd>
-            </div>
-            <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-              <dt className="text-sm font-medium text-gray-500">Idiomas</dt>
-              <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">
-                {idioma}
-              </dd>
-            </div>
-            <div className="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-              <dt className="text-sm font-medium text-gray-500">Attachments</dt>
-              <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">
-                <ul role="list" className="divide-y divide-gray-200 rounded-md border border-gray-200">
-                  <li className="flex items-center justify-between py-3 pl-3 pr-4 text-sm">
-                    <div className="flex w-0 flex-1 items-center">
-                      {/* <PaperClipIcon className="h-5 w-5 flex-shrink-0 text-gray-400" aria-hidden="true" /> */}
-                      <span className="ml-2 w-0 flex-1 truncate">resume_back_end_developer.pdf</span>
-                    </div>
-                    <div className="ml-4 flex-shrink-0">
-                      <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500">
-                        Download
-                      </a>
-                    </div>
-                  </li>
-                </ul>
-              </dd>
-            </div>
-          </dl>
+        <div className="p-3 flex flex-col gap-2">
+          <Link to="idiomas">
+          <button className="underline underline-offset-8">
+            Idiomas
+          </button>
+          </Link>
+          <Link to="lenguajes">
+          <button className="underline underline-offset-8">
+            Lenguajes de programacion
+          </button>
+          </Link>
+          <Link to="experiencia">
+          <button className="underline underline-offset-8" >
+            Experiencia laboral
+          </button>
+          </Link>
+          <Link to="cursos">
+          <button className="underline underline-offset-8">
+            Cursos
+          </button>
+          </Link>
+          <a href="">
+           <button className="flex items-center gap-2 justify-center bg-slate-500 hover:bg-slate-900 text-white font-bold py-2 px-4 rounded">
+            Descargar CV
+            <img className="w-6 h-6" src="https://img.icons8.com/ios/50/000000/download.png" alt="download"/>
+          </button>
+          </a>
         </div>
       </div>
-    )
-  }
+      <div className="flex justify-center items-center bg-slate-300 dark:bg-gray-700 sm:w-1/2 md:w-1/3 border-dashed border-2 border-slate-600">
+        {/* <div className="absolute top-0 right-0 transform translate-x-1/2 -translate-y-1/2 z-10">
+          <div className="w-28 h-28 bg-slate-500 rounded-full"></div>
+        </div>    -----------esto son los circulos----------------
+        <div className="absolute bottom-0 left-0 transform -translate-x-1/2 translate-y-1/2 z-10">
+          <div className="w-28 h-28 bg-slate-500 rounded-full"></div>
+        </div> */}
+        <img className=" w-full h-auto" src={imagen} alt={nombre} />
+      </div>
+    </div>
+    </div>
+  );
+};
 
 export default About;

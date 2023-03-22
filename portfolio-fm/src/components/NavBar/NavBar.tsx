@@ -1,18 +1,19 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import logo from '../../assets/logo.png'
+import DarkMode from '../DarkMode/DarkMode'
 
 
 function NavBar() {
     const [isOpen, setIsOpen] = useState(true)
 
     return (
-        <nav className="bg-black fixed w-full">
+        <nav className="bg-gray-400 text-black dark:text-white dark:bg-zinc-900 fixed w-full z-10">
             <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
                 <div className="relative flex items-center justify-between h-16">
                     <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                         <button
                             type="button"
-                            className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                            className="inline-flex items-center justify-center p-2 rounded-md text-white  hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
                             aria-controls="mobile-menu"
                             aria-expanded="false"
                             onClick={() => setIsOpen(!isOpen)}
@@ -26,9 +27,9 @@ function NavBar() {
                                 aria-hidden="true"
                             >
                                 <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="2"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
                                     d="M4 6h16M4 12h16M4 18h16"
                                 />
                             </svg>
@@ -41,23 +42,23 @@ function NavBar() {
                                 aria-hidden="true"
                             >
                                 <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="2"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
                                     d="M6 18L18 6M6 6l12 12"
                                 />
                             </svg>
                         </button>
                     </div>
-                    <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
-                        <div className="flex-shrink-0 flex items-center">
+                    <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-between">
+                        <div className="flex-shrink-0 flex items-center ">
                             <img
-                                className="block lg:hidden h-10 w-auto"
+                                className="block lg:hidden h-12 w-auto invert dark:filter-none "
                                 src={logo}
                                 alt="Logo"
                             />
                             <img
-                                className="hidden lg:block h-10 w-auto"
+                                className="hidden lg:block h-12 w-auto invert dark:filter-none"
                                 src={logo}
                                 alt="Logo"
                             />
@@ -66,29 +67,24 @@ function NavBar() {
                             <div className="flex space-x-4">
                                 <a
                                     href="#home"
-                                    className="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium"
+                                    className="bg-gray-700  px-3 py-2 rounded-md text-sm font-medium"
                                     aria-current="page"
                                 >
                                     Menu
                                 </a>
                                 <a
-                                    href="#about"
-                                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                                >
-                                    Sobre mi
-                                </a>
-                                <a
-                                    href="#proyects"
-                                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                                    href="#proyectos"
+                                    className=" hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
                                 >
                                     Proyectos
                                 </a>
                                 <a
-                                    href="#contact"
-                                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                                    href="#about"
+                                    className=" hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
                                 >
-                                    Contacto
+                                    Sobre mi
                                 </a>
+                                <DarkMode/>
                             </div>
                         </div>
                     </div>
@@ -98,34 +94,26 @@ function NavBar() {
                 <div className="px-2 pt-2 pb-3 space-y-1">
                     <a
                         href="#home"
-                        className="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
+                        className="bg-gray-700  block px-3 py-2 rounded-md text-base font-medium"
                     >
                         Menu
                     </a>
                     <a
-                        href="#about"
-                        className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                    >
-                        Sobre mi
-                    </a>
-                    <a
-                        href="#proyects"
-                        className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                        href="#proyectos"
+                        className=" hover:bg-gray-700 block px-3 py-2 rounded-md text-base font-medium"
                     >
                         Proyectos
                     </a>
                     <a
-                        href="#contact"
-                        className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                        href="#about"
+                        className="hover:bg-gray-700 block px-3 py-2 rounded-md text-base font-medium"
                     >
-                        Contacto
+                        Sobre mi
                     </a>
+                    <DarkMode/>
                 </div>
             </div>
         </nav>
     )
-
-
-
 }
 export default NavBar
