@@ -1,37 +1,34 @@
 import { data } from "../../data.json";
 
 const About = () => {
-  const { nombre, apellido, descripcion, edad, email, imagen, } = data;
+  const { nombre, apellido, descripcion, edad, email, imagen, github } = data;
   const nombreCompleto = nombre + " " + apellido;
 
   return (
-    <div className="relative flex justify-center items-center w-full h-screen ">
-    <div className="flex flex-row items-center w-full justify-center p-4 h-screen  ">
-      <div className="flex flex-col font-semibold gap-3 w-1/2  dark:text-gray-900">
+    <div id="about" className="relative flex justify-center items-center w-full flex-wrap ">
+    <div className="flex flex-col sm:flex-wrap md:flex-row items-center justify-center p-4">
+      <div className="flex flex-col font-semibold gap-3 w-full md:w-1/2 dark:text-white">
         <h1>Sobre mi</h1>
-        <div className="bg-slate-400 p-3 rounded-lg items-center justify-center text-center w-10/12 ">
+        <div className="bg-slate-400 dark:bg-gray-800 p-3 rounded-lg items-center justify-center text-center w-90% md:w-10/12">
           <h2>
             Soy {nombreCompleto}, tengo {edad} años. {descripcion}
           </h2>
           <hr className="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700" />
           <h4>Podes comunicarte conmigo via</h4>
           <div className="flex flex-row gap-2 items-center justify-center">
-            <a href="" target="_blank" rel="noreferrer">
+            <a href={github} target="_blank" rel="noreferrer">
               <img
-                className="w-14 h-14"
-                src="https://img.icons8.com/plasticine/256/github-squared.png"
+                className="w-12 h-12 dark:invert"
+                src="https://img.icons8.com/ios-filled/256/github.png"
                 alt="github"
               />
             </a>
             <a
-              href="mailto:"
-              data-correo="${email}"
-              target="_blank"
-              rel="noreferrer"
+              href={`mailto:${email}`} target="_blank" rel="noreferrer"
             >
               <img
-                className="w-12 h-12"
-                src="https://img.icons8.com/doodle/256/apple-mail.png"
+                className="w-12 h-12 dark:invert"
+                src="https://img.icons8.com/ios-filled/256/apple-mail.png"
                 alt="email"
               />
             </a>
@@ -58,14 +55,14 @@ const About = () => {
           </a>
         </div>
       </div>
-      <div className="relative flex justify-center items-center bg-slate-300 w-1/3 border-dashed border-2 border-slate-600">
-        <div className="absolute top-0 right-0 transform translate-x-1/2 -translate-y-1/2 z-10">
+      <div className="flex justify-center items-center bg-slate-300 dark:bg-gray-700 sm:w-1/2 md:w-1/3 border-dashed border-2 border-slate-600">
+        {/* <div className="absolute top-0 right-0 transform translate-x-1/2 -translate-y-1/2 z-10">
           <div className="w-28 h-28 bg-slate-500 rounded-full"></div>
-        </div>
+        </div>    -----------esto son los circulos----------------
         <div className="absolute bottom-0 left-0 transform -translate-x-1/2 translate-y-1/2 z-10">
           <div className="w-28 h-28 bg-slate-500 rounded-full"></div>
-        </div>
-        <img className="z-20 w-8/12" src={imagen} alt={nombre} />
+        </div> */}
+        <img className=" w-full h-auto" src={imagen} alt={nombre} />
       </div>
     </div>
     </div>

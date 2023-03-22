@@ -5,6 +5,7 @@
             "nombre": "Franco",
             "apellido": "Marcuzzi",
             "email": "FrancoArielMarcuzzi@hotmail.com",
+            "github": "https://github.com/MarcuzziFranco",
             "edad": "29",
             "descripcion": "Autodidacta, mientras tenga internet siempre estoy viendo que temas relacionados a la computación puedo aprender, esto me ha llevado siempre a hacer un poco de todo y no especializándome en nada en particular en relación a la programación. Como resultado  me dio la posibilidad de cambiar y adaptarme de un sistema  a otro con rapidez, no soy fanático de ningún lenguaje ni sistema en particular",
             "proyectos": [
@@ -25,7 +26,7 @@
                     "estado": "Prototipo"
                 }
             ],
-            "imagen": "Esto Dario fijate como guardar una imagen en el back y manda su direccion aqui o fijate de que manera administrarlo.",
+            "imagen": "https://img.icons8.com/fluency/256/administrator-male.png",
             "imagen2": "",
             "idiomas": [
                 {
