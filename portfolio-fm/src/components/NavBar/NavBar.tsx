@@ -73,7 +73,7 @@ function NavBar() {
                                     Menu
                                 </a>
                                 <a
-                                    href="#proyects"
+                                    href="#proyectos"
                                     className=" hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
                                 >
                                     Proyectos
@@ -85,12 +85,6 @@ function NavBar() {
                                     Sobre mi
                                 </a>
                                 <DarkMode/>
-                                {/* <a
-                                    href="#contact"
-                                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                                >
-                                    Contacto
-                                </a> */}
                             </div>
                         </div>
                     </div>
@@ -105,7 +99,7 @@ function NavBar() {
                         Menu
                     </a>
                     <a
-                        href="#proyects"
+                        href="#proyectos"
                         className=" hover:bg-gray-700 block px-3 py-2 rounded-md text-base font-medium"
                     >
                         Proyectos
@@ -117,12 +111,6 @@ function NavBar() {
                         Sobre mi
                     </a>
                     <DarkMode/>
-                    {/* <a
-                        href="#contact"
-                        className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                    >
-                        Contacto
-                    </a> */}
                 </div>
             </div>
         </nav>

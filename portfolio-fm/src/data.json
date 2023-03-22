@@ -31,15 +31,18 @@
             "idiomas": [
                 {
                     "lengua": "Español",
-                    "estado": "Hablante"
+                    "estado": "Hablante",
+                    "bandera": "https://img.icons8.com/color/256/spain.png"
                 },
                 {
                     "lengua": "Ingles",
-                    "estado": "Estudiando"
+                    "estado": "Estudiando",
+                    "bandera": "https://img.icons8.com/office/256/great-britain.png"
                 },
                 {
                     "lengua": "Italiano",
-                    "estado": "Estudiando"
+                    "estado": "Estudiando",
+                    "bandera": "https://img.icons8.com/officel/256/italy.png"
                 }
             ],
             "lenguajes_programacion": [
