@@ -1,4 +1,5 @@
 import { data } from "../../data.json";
+import {Link} from 'react-router-dom'
 
 const About = () => {
   const { nombre, apellido, descripcion, edad, email, imagen, github } = data;
@@ -35,18 +36,26 @@ const About = () => {
           </div>
         </div>
         <div className="p-3 flex flex-col gap-2">
-          <a className="underline underline-offset-8" href="idiomas">
+          <Link to="idiomas">
+          <button className="underline underline-offset-8">
             Idiomas
-          </a>
-          <a className="underline underline-offset-8" href="lenguajes">
+          </button>
+          </Link>
+          <Link to="lenguajes">
+          <button className="underline underline-offset-8">
             Lenguajes de programacion
-          </a>
-          <a className="underline underline-offset-8" href="experiencia">
+          </button>
+          </Link>
+          <Link to="experiencia">
+          <button className="underline underline-offset-8" >
             Experiencia laboral
-          </a>
-          <a className="underline underline-offset-8" href="cursos">
+          </button>
+          </Link>
+          <Link to="cursos">
+          <button className="underline underline-offset-8">
             Cursos
-          </a>
+          </button>
+          </Link>
           <a href="">
            <button className="flex items-center gap-2 justify-center bg-slate-500 hover:bg-slate-900 text-white font-bold py-2 px-4 rounded">
             Descargar CV
