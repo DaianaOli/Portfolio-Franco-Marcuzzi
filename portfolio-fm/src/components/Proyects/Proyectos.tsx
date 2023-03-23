@@ -1,11 +1,56 @@
-const Proyectos=()=>{
-    return(
-        <div id="proyectos">
-            <h1>Proyectos</h1>
-           
+import { data } from "../../data.json";
+import { useState } from "react";
 
-        </div>
-    )
-}
+const Proyectos = () => {
+  const { proyectos } = data;
 
-export default Proyectos
+  const proyecto = proyectos.map((p) => <Proyecto key={p.id} proyecto={p} />);
+
+  return (
+    <div className="flex flex-col items-center justify-center gap-1 dark:text-white p-2">
+      <h1 className="font-semibold">Proyectos</h1>
+      {proyecto}
+    </div>
+  );
+};
+
+const Proyecto = ({ proyecto }) => {
+  const [verDetalles, setVerDetalles] = useState(false);
+
+  const handleVerDetalles = () => {
+    setVerDetalles(!verDetalles);
+  };
+
+  return (
+    <div
+      id="proyectos"
+      className="flex flex-row items-center justify-center w-4/5 bg-gray-500 dark:bg-slate-800"
+    >
+      <div className="flex w-1/2">
+        <img
+          className="w-full"
+          src="https://img.interempresas.net/fotos/1965707.jpeg"
+          alt=""
+        />
+      </div>
+      <div className="w-1/2 flex flex-col items-center text-center justify-center">
+        {verDetalles ? (
+          <h1>{proyecto.descripcion}</h1>
+        ) : (
+          <div className="w-1/2 flex flex-col items-center text-center justify-center">
+            <h3>{proyecto.estado}</h3>
+            <h2>{proyecto.fecha_inicio}</h2>
+            <h2>{proyecto.fecha_fin}</h2>
+            <h1>{proyecto.nombre}</h1>
+          </div>
+        )}
+
+        <button onClick={handleVerDetalles}>
+          {verDetalles ? "Ver menos" : "Ver más"}
+        </button>
+      </div>
+    </div>
+  );
+};
+
+export default Proyectos;
