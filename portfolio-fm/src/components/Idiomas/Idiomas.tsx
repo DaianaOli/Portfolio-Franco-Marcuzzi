@@ -6,7 +6,7 @@ const Idiomas = ()=>{
     const {idiomas} = data
     const datos = idiomas.map((i)=>{
         return(
-            <div>
+            <div data-aos="zoom-in">
                 <div className="flex flex-col bg-slate-300 dark:bg-transparent gap-14 items-center text-center p-10  ">
                     <img className="w-auto h-auto" src={i.bandera} alt={i.lengua}/>
                     <div className="flex flex-col gap-10">

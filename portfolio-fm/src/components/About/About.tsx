@@ -6,11 +6,12 @@ const About = () => {
   const nombreCompleto = nombre + " " + apellido;
 
   return (
-    <div id="about" className="relative flex justify-center items-center w-full flex-wrap ">
-    <div className="flex flex-col sm:flex-wrap md:flex-row items-center justify-center p-4">
-      <div className="flex flex-col font-semibold gap-3 w-full md:w-1/2 dark:text-white">
+    <div id="about" className="relative flex justify-center items-center w-full flex-wrap">
+    <div className="flex flex-col sm:flex-wrap md:flex-row items-center justify-center p-4 ">
+      <div className="flex flex-col font-semibold gap-3 w-full md:w-1/2 dark:text-white ">
         <h1>Sobre mi</h1>
-        <div className="bg-slate-400 dark:bg-gray-800 p-3 rounded-lg items-center justify-center text-center w-90% md:w-10/12">
+        <div data-aos="zoom-in-up" data-aos-duration="1000"
+        className="bg-slate-400 dark:bg-gray-800 p-3 rounded-lg items-center justify-center text-center w-90% md:w-10/12">
           <h2>
             Soy {nombreCompleto}, tengo {edad} años. {descripcion}
           </h2>
@@ -35,24 +36,24 @@ const About = () => {
             </a>
           </div>
         </div>
-        <div className="p-3 flex flex-col gap-2">
+        <div className="p-3 flex flex-col gap-2 w-90% md:w-10/12" >
           <Link to="idiomas">
-          <button className="underline underline-offset-8">
+          <button className="underline underline-offset-8" data-aos="fade-up" >
             Idiomas
           </button>
           </Link>
           <Link to="lenguajes">
-          <button className="underline underline-offset-8">
+          <button className="underline underline-offset-8" data-aos="fade-up" data-aos-delay="100">
             Lenguajes de programacion
           </button>
           </Link>
           <Link to="experiencia">
-          <button className="underline underline-offset-8" >
+          <button className="underline underline-offset-8" data-aos="fade-up" data-aos-delay="200">
             Experiencia laboral
           </button>
           </Link>
           <Link to="cursos">
-          <button className="underline underline-offset-8">
+          <button className="underline underline-offset-8" data-aos="fade-up" data-aos-delay="300">
             Cursos
           </button>
           </Link>
@@ -64,7 +65,8 @@ const About = () => {
           </a>
         </div>
       </div>
-      <div className="flex justify-center items-center bg-slate-300 dark:bg-gray-700 sm:w-1/2 md:w-1/3 border-dashed border-2 border-slate-600">
+      <div data-aos="flip-left" data-aos-duration="2000"
+      className="flex justify-center items-center bg-slate-300 dark:bg-gray-700 sm:w-1/2 md:w-1/3 border-dashed border-2 border-slate-600">
         {/* <div className="absolute top-0 right-0 transform translate-x-1/2 -translate-y-1/2 z-10">
           <div className="w-28 h-28 bg-slate-500 rounded-full"></div>
         </div>    -----------esto son los circulos----------------
