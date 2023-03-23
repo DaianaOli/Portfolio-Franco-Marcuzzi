@@ -36,7 +36,7 @@ useEffect(() => {
           <div >
             <Proyectos />
           </div>
-          <div >
+          <div className="h-screen" >
             <About />
           </div>
         </div>
