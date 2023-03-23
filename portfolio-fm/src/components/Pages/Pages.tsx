@@ -6,6 +6,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
 import Loading from "../Loading/Loading";
+import bgNoiseImage from "../../assets/noise-transparent.png"
 
 AOS.init();
 
@@ -28,11 +29,17 @@ useEffect(() => {
             <Loading />
         </div>
       ) : (
-        <div className="overflow-hidden">
+        <div className="overflow-hidden"  >
+          <div className="fixed top-[-50%] bg-imageNoise left-[-50%] right-[-50%] bottom-[-50%]  animate-bganimation w-[200%] h-[200vh] ">
+          </div>
+         <div>
           <NavBar />
+         </div>
+        
           <div>
             <LandingPage />
           </div>
+
           <div >
             <Proyectos />
           </div>

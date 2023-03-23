@@ -6,12 +6,13 @@ module.exports = {
     extend: {
       colors: {
         dark: "#1a202c",
+        colorNoise: "#111111",
       },
       backgroundImage: {
-        noise: "url('/src/assets/noise-transparent.png')",
+        imageNoise: "url('/src/assets/noise-transparent.png')",
       },
       animation: {
-        bganimation: "bganimation 2s infinite",
+        bganimation: "bganimation 1s infinite",
       },
       keyframes: {
         bganimation: {

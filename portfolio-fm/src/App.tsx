@@ -9,12 +9,14 @@ import Experiencia from './components/Experiencia/Experiencia'
 import Cursos from './components/Cursos/Cursos'
 import Proyectos from './components/Proyects/Proyectos'
 import Pages from './components/Pages/Pages'
+import background from './assets/noise-transparent.png'
 
 
 function App() {
   return (
     <BrowserRouter>
-    <div className='bg-white dark:bg-zinc-900'>
+    <div className="bg-white dark:bg-colorNoise"
+    >
     {/*<div id="google_translate_element">  ---para traductor---- */} 
     <Routes>
       <Route path='/' element={<Pages/>} />
