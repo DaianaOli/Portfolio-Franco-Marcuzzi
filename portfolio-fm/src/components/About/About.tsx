@@ -38,22 +38,22 @@ const About = () => {
         </div>
         <div className="p-3 flex flex-col gap-2 w-90% md:w-10/12" >
           <Link to="idiomas">
-          <button className="underline underline-offset-8" data-aos="fade-up" >
+          <button className="underline underline-offset-8" data-aos="fade-right" >
             Idiomas
           </button>
           </Link>
           <Link to="lenguajes">
-          <button className="underline underline-offset-8" data-aos="fade-up" data-aos-delay="100">
+          <button className="underline underline-offset-8" data-aos="fade-right" data-aos-delay="100">
             Lenguajes de programacion
           </button>
           </Link>
           <Link to="experiencia">
-          <button className="underline underline-offset-8" data-aos="fade-up" data-aos-delay="200">
+          <button className="underline underline-offset-8" data-aos="fade-right" data-aos-delay="200">
             Experiencia laboral
           </button>
           </Link>
           <Link to="cursos">
-          <button className="underline underline-offset-8" data-aos="fade-up" data-aos-delay="300">
+          <button className="underline underline-offset-8" data-aos="fade-right" data-aos-delay="300">
             Cursos
           </button>
           </Link>
@@ -65,7 +65,7 @@ const About = () => {
           </a>
         </div>
       </div>
-      <div data-aos="flip-left" data-aos-duration="2000"
+      <div data-aos="fade-down-left" data-aos-duration="2000"
       className="flex justify-center items-center bg-slate-300 dark:bg-gray-700 sm:w-1/2 md:w-1/3 border-dashed border-2 border-slate-600">
         {/* <div className="absolute top-0 right-0 transform translate-x-1/2 -translate-y-1/2 z-10">
           <div className="w-28 h-28 bg-slate-500 rounded-full"></div>
