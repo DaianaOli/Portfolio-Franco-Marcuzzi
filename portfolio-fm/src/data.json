@@ -30,16 +30,19 @@
             "imagen2": "",
             "idiomas": [
                 {
+                   "id": 1, 
                     "lengua": "Español",
                     "estado": "Hablante",
                     "bandera": "https://img.icons8.com/color/256/spain.png"
                 },
                 {
+                    "id": 2, 
                     "lengua": "Ingles",
                     "estado": "Estudiando",
                     "bandera": "https://img.icons8.com/office/256/great-britain.png"
                 },
                 {
+                    "id": 3, 
                     "lengua": "Italiano",
                     "estado": "Estudiando",
                     "bandera": "https://img.icons8.com/officel/256/italy.png"
