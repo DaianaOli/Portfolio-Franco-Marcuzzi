@@ -28,15 +28,15 @@ useEffect(() => {
             <Loading />
         </div>
       ) : (
-        <div >
+        <div className="overflow-hidden">
           <NavBar />
           <div>
             <LandingPage />
           </div>
-          <div>
+          <div >
             <Proyectos />
           </div>
-          <div className="h-screen">
+          <div >
             <About />
           </div>
         </div>
