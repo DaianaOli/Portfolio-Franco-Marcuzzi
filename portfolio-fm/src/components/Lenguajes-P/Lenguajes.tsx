@@ -30,7 +30,7 @@ const Lenguajes = () => {
             className="flex items-center gap-2 justify-center bg-slate-500 hover:bg-slate-900 text-white font-bold py-2 px-4 rounded"
             onClick={volver}
             >
-                Atras
+                Volver
             </button>
         </div>
     )
