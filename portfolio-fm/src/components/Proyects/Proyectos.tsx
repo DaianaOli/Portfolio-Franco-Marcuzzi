@@ -1,11 +1,20 @@
 import { data } from "../../data.json";
 import { useState } from "react";
 
+interface Proyecto {
+  id: number;
+  descripcion: string;
+  estado: string;
+  fecha_inicio: string;
+  fecha_fin: string;
+  nombre: string;
+}
+
 const Proyectos = () => {
   const { proyectos } = data;
-
-  const proyecto = proyectos.map((p) => <Proyecto key={p.id} proyecto={p} />);
-
+  const proyecto = proyectos.map((p: Proyecto) => (
+    <Proyecto key={p.id} proyecto={p} />
+  ));
   return (
     <div className="flex flex-col items-center justify-center gap-4 dark:text-white p-2">
       <h1 className="font-semibold">Proyectos</h1>
@@ -14,7 +23,7 @@ const Proyectos = () => {
   );
 };
 
-const Proyecto = ({ proyecto }) => {
+const Proyecto = ({ proyecto }: { proyecto: Proyecto }) => {
   const [verDetalles, setVerDetalles] = useState(false);
 
   const handleVerDetalles = () => {
