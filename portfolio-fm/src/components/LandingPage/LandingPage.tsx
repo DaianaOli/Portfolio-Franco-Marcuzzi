@@ -1,4 +1,4 @@
-import React from 'react';
+import  {useState} from 'react';
 import fondo from '../../assets/fondo.png'
 
 type Properties<T> = { [key: string]: T };
@@ -9,11 +9,13 @@ interface CustomCSSProperties extends React.CSSProperties {
 }
 
 const LandingPage = () => {
+  const [hover, setHover] = useState(false);
   const style: CustomCSSProperties = {
     '--delay': '0.1s',
     transitionDelay: '0.5s',
     backgroundImage: fondo
   };
+  console.log(hover)
 
   const tablets = {
     front: ['F', 'r', 'a', 'n', 'c', 'o', ' ', 'A', '.', 'M', 'a', 'r', 'c', 'u', 'z', 'z', 'i', ' '],
@@ -22,11 +24,12 @@ const LandingPage = () => {
 
   return (
     <section id="home">
-      <div className=" flex  md:flex-row flex-col h-screen items-center justify-between">
+      <div className=" flex md:flex-row flex-col h-screen items-center justify-between">
           <div className="grid grid-cols-9 my-20 lg:my-0  px-2 mb-2 w-screen md:w-3/5  content-center h-2/5 text-center font-extrabold font-serif text-2xl sm:text-4xl lg:text-6xl group">
             {tablets.front.map((e, index) => (
               <div
-              className="bg-neutral-800 h-16 sm:h-32 lg:h-48 transform transition ease-in-out shadow-xl shadow-black/40 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] duration-1000 delay-[var(--delay)]"
+              className={`bg-neutral-800 h-16 sm:h-32 lg:h-48  transition ease-in-out shadow-xl shadow-black/40 [transform-style:preserve-3d]
+              ${hover ? "[transform:rotateY(180deg)]" : ""}  duration-1000 delay-[var(--delay)]`}
               style={{
                 transitionDelay: index * 0.1 + 's',
                 display: 'flex',
@@ -60,6 +63,8 @@ const LandingPage = () => {
               </div>
         <img
           className=" absolute object-cover w-full h-full group-hover:opacity-0 duration-1000 rounded "
+          onMouseEnter={() => setHover(true)}
+          onMouseLeave={() => setHover(false)}
           alt="hero"
           src="https://images.unsplash.com/photo-1620122830785-a18b43585b44?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aG9tYnJlJTIwYmxhbmNvJTIweSUyMG5lZ3JvfGVufDB8fDB8fA%3D%3D&w=1000&q=80"
           />
