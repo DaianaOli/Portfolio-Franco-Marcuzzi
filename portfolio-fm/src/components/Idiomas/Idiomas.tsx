@@ -6,12 +6,12 @@ const Idiomas = ()=>{
     const {idiomas} = data
     const datos = idiomas.map((i)=>{
         return(
-            <div data-aos="zoom-in">
-                <div className="flex flex-col bg-slate-300 dark:bg-transparent gap-14 items-center text-center p-10  ">
-                    <img className="w-auto h-auto" src={i.bandera} alt={i.lengua}/>
-                    <div className="flex flex-col gap-10">
-                        <h1 className="font-bold">{i.lengua}</h1>
-                        <h2 className="text-neutral-600">{i.estado}</h2>
+            <div data-aos="zoom-out" data-aos-duration="2000">
+                <div className="flex flex-col items-center justify-center text-center p-10 gap-8 bg-slate-300/40 dark:bg-zinc-700/50  rounded-lg border-x-2 border-black dark:border-white ">
+                    <img className="w-44 h-44 border-2 border-black rounded-full dark:border-white" src={i.bandera} alt={i.lengua}/>
+                    <div className="flex flex-col gap-14">
+                        <h1 className="font-bold text-3xl">{i.lengua}</h1>
+                        <h2 className="font-semibold">{i.estado}</h2>
                     </div>
                 </div>
             </div>
@@ -25,10 +25,11 @@ const Idiomas = ()=>{
 
 
     return(
-        <div className="flex flex-col dark:bg-zinc-900 dark:text-white  w-full h-screen items-center justify-between p-4">
+        <div 
+        className="flex flex-col bg-White dark:bg-Dark bg-no-repeat bg-cover bg-center dark:text-white w-full min-h-screen items-center justify-between p-4 gap-4">
             <DarkMode/>
             <h1 className="text-lg font-semibold">Idiomas</h1>
-            <div className="flex flex-col gap-14  items-center justify-center sm:flex-wrap md:flex-row">
+            <div data-aos="zoom-in" data-aos-duration="1000" className="flex flex-wrap gap-14 justify-center p-4">
                 {datos}
             </div>
             <button 
