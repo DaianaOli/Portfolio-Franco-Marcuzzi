@@ -15,7 +15,9 @@ module.exports = {
       backgroundImage: {
         imageNoise: "url('/src/assets/noise-transparent.png')",
         bgWhite: "url(https://res.cloudinary.com/dcpcja2qg/image/upload/v1680013353/bgWhite_nigwyc.png)",
-        bgDark: "url(https://res.cloudinary.com/dcpcja2qg/image/upload/v1680013353/bgDark_jujnzh.png)"
+        bgDark: "url(https://res.cloudinary.com/dcpcja2qg/image/upload/v1680013353/bgDark_jujnzh.png)",
+        White: "url(https://res.cloudinary.com/dcpcja2qg/image/upload/v1680018284/bg_bggenerator_com_dfz3zj.png)",
+        Dark: "url(https://res.cloudinary.com/dcpcja2qg/image/upload/v1680018275/bg_bggenerator_com_1_e6t89u.png)",
       },
       animation: {
         bganimation: "bganimation 1s infinite",
