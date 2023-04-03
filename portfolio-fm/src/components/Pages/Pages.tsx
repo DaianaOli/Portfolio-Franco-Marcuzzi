@@ -4,50 +4,45 @@ import NavBar from "../NavBar/NavBar"
 import Proyectos from "../Proyects/Proyectos"
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Loading from "../Loading/Loading";
-import bgNoiseImage from "../../assets/noise-transparent.png"
+
 
 AOS.init();
 
 const Pages = () => {
   const [loading, setLoading] = useState(true);
-
-useEffect(() => {
-  setTimeout(() => {
-    setLoading(false)
-    AOS.refresh();
-  }, 3000);
-  AOS.refresh();
-}, [])
-
+  const changeLoading = () => {
+    setLoading(false);
+    setTimeout(()=>{
+      document.body.classList.remove("overflow-hidden")
+    },800)
+  };
 
   return (
-    <div>
-      {loading ? (
+    <div onWheel={changeLoading} onClick={changeLoading} className="">
+      
+        <div
+          className={`fixed duration-1000 z-50 top-0 left-0 right-0 bottom-0 transition-transform ${
+            loading ? "" : "transform -translate-y-full "
+          }`}>
+          <Loading />
+        </div>
+        <div className="overflow-hidden">
         <div>
-            <Loading />
-        </div>
-      ) : (
-        <div className="overflow-hidden"  >
-          <div className="fixed top-[-50%] bg-imageNoise left-[-50%] right-[-50%] bottom-[-50%]  animate-bganimation w-[200%] h-[200vh] ">
-          </div>
-         <div>
           <NavBar />
-         </div>
-        
-          <div>
-            <LandingPage />
-          </div>
-
-          <div >
-            <Proyectos />
-          </div>
-          <div className="h-screen" >
-            <About />
-          </div>
         </div>
-      )}
+        <div>
+          <LandingPage />
+        </div>
+        <div>
+          <Proyectos />
+        </div>
+        <div className="h-screen">
+          <About />
+        </div>
+      </div>
+    
     </div>
   );
 };

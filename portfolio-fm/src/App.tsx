@@ -17,6 +17,8 @@ function App() {
     <BrowserRouter>
     <div className="bg-white dark:bg-colorNoise"
     >
+      <div className="fixed top-[-50%] bg-imageNoise left-[-50%] right-[-50%] bottom-[-50%]  animate-bganimation w- [200%] h-[200vh] ">
+        </div>
     {/*<div id="google_translate_element">  ---para traductor---- */} 
     <Routes>
       <Route path='/' element={<Pages/>} />
