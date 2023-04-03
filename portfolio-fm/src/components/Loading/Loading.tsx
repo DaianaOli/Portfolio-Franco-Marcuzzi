@@ -1,6 +1,12 @@
+import { useEffect } from "react";
 import logo from "../../assets/logo.png";
 
 const Loading = () => {
+
+    useEffect(()=> {
+        document.body.classList.add("overflow-hidden");
+    
+    },[])
 
     return (
         <div className="w-full h-screen flex flex-col items-center justify-center bg-black">
