@@ -1,133 +1,370 @@
 {
-    "data": 
-        {
-            "id": 1,
-            "nombre": "Franco",
-            "apellido": "Marcuzzi",
-            "email": "FrancoArielMarcuzzi@hotmail.com",
-            "github": "https://github.com/MarcuzziFranco",
-            "edad": "29",
-            "descripcion": "Autodidacta, mientras tenga internet siempre estoy viendo que temas relacionados a la computación puedo aprender, esto me ha llevado siempre a hacer un poco de todo y no especializándome en nada en particular en relación a la programación. Como resultado  me dio la posibilidad de cambiar y adaptarme de un sistema  a otro con rapidez, no soy fanático de ningún lenguaje ni sistema en particular",
-            "proyectos": [
-                {
-                    "id": 1,
-                    "nombre": "Sistema de control hornos industriales",
-                    "descripcion": "Se programo un micro-controlador arduino para hacer de controlador de un horno electrico permitiendo controlar su temperatura.",
-                    "fecha_inicio": "2013-02-08",
-                    "fecha_fin": "2014-10-24",
-                    "estado": "Completado"
-                },
-                {
-                    "id": 2,
-                    "nombre": "Prototipo de gestion y control de prensas hidraulicas.",
-                    "descripcion": "Se programo un micro-controlador arduino para gestionar la operacion y trabajo mediante sensores magneticos de una prensa hidraulica,utilizada en la fabricacion de puertas",
-                    "fecha_inicio": "2014-02-04",
-                    "fecha_fin": "2014-03-07",
-                    "estado": "Prototipo"
-                }
-            ],
-            "imagen": "https://img.icons8.com/fluency/256/administrator-male.png",
-            "imagen2": "",
-            "idiomas": [
-                {
-                   "id": 1, 
-                    "lengua": "Español",
-                    "estado": "Hablante",
-                    "bandera": "https://img.icons8.com/color/256/spain.png"
-                },
-                {
-                    "id": 2, 
-                    "lengua": "Ingles",
-                    "estado": "Estudiando",
-                    "bandera": "https://img.icons8.com/office/256/great-britain.png"
-                },
-                {
-                    "id": 3, 
-                    "lengua": "Italiano",
-                    "estado": "Estudiando",
-                    "bandera": "https://img.icons8.com/officel/256/italy.png"
-                }
-            ],
-            "lenguajes_programacion": [
-                {
-                    "id": 1,
-                    "nombre": "C#",
-                    "experiencia": "Utilizando tecnologías como entity framework, en la construcción de micro-servicios.",
-                    "logo": "https://img.icons8.com/color/256/c-sharp-logo.png"
-                },
-                {
-                    "id": 2,
-                    "nombre": "Java",
-                    "experiencia": "Utilizado para construir interfaces mediante Swing. Actualmente utilizado para programar bajo tecnologías Android",
-                    "logo": "https://cdn-icons-png.flaticon.com/512/5968/5968282.png"
-                },
-                {
-                    "id": 3,
-                    "nombre": "Javascript",
-                    "experiencia": "Utilizado a para la contruccion de BFF(back-for-front) para el desarrollo de arquitecturas de micro-servicios.",
-                    "logo": "https://cdn-icons-png.flaticon.com/512/5968/5968292.png"
-                },
-                {
-                    "id": 4,
-                    "nombre": "SQL",
-                    "experiencia": "Como lenguaje base para programar logica de negocio en la creacion de STORE-PROCEDURE",
-                    "logo": "https://cdn-icons-png.flaticon.com/512/5815/5815478.png"
-                },
-                {
-                    "id": 5,
-                    "nombre": "Android Native",
-                    "experiencia": "Maquetado de pantallas android.",
-                    "logo": "https://cdn-icons-png.flaticon.com/512/270/270780.png"
-                }
-            ],
-            "experiencia_laboral": [
-                {
-                    "id": 1,
-                    "nombre": "Maestro de robotica para los cursos de 5to y 6to grdo",
-                    "descripcion": "Trabaje como profesor en el Plan Nacional de Robótica  AREYA, el cual estaba contemplado para los alumnos 5to y 6to año de escuela primaria",
-                    "fecha_inicio": "2019-01-01",
-                    "fecha_fin": "2019-12-31"
-                },
-                {
-                    "id": 2,
-                    "nombre": "Desarrollador free-lance y luego como empleado en un software factory llamada Squad",
-                    "descripcion": "Como desarrollador de diferentes proyectos utilizando varias de mi perfil tecnologias",
-                    "fecha_inicio": "2020-01-01",
-                    "fecha_fin": "2021-06-01"
-                },
-                {
-                    "id": 3,
-                    "nombre": "Desarrollador empleado por Galicia-Seguros",
-                    "descripcion": "Actualmente trabajando para Galicia-Seguros en la creacion de plataformas orientas al manejo de seguros.",
-                    "fecha_inicio": "2020-01-01",
-                    "fecha_fin": ""
-                }
-            ],
-            "experiencia_cursos": [
-                {
-                    "id": 1,
-                    "empresa": "Alkemy",
-                    "descripcion": "Realice un curso de aceleración de una empresa llamada Alkemy donde se llevó a cabo la construcción de un sitio Web utilizando tecnologías de .NET",
-                    "fecha_inicio": "2021-01-01",
-                    "fecha_fin": "2021-03-01",
-                    "estado": "Terminado"
-                },
-                {
-                    "id": 2,
-                    "empresa": "Coder House",
-                    "descripcion": "Curso de Javascript",
-                    "fecha_inicio": "2022-07-01",
-                    "fecha_fin": "2022-09-01",
-                    "estado": "Terminado"
-                },
-                {
-                    "id": 3,
-                    "empresa": "Coder House",
-                    "descripcion": "Curso de React",
-                    "fecha_inicio": "2022-07-01",
-                    "fecha_fin": "2022-09-01",
-                    "estado": "Terminado"
-                }
-            ]
-        }
+    "data": {
+        "id": 1,
+        "nombre": "Franco",
+        "apellido": "Marcuzzi",
+        "email": "FrancoArielMarcuzzi@hotmail.com",
+        "github": "https://github.com/MarcuzziFranco",
+        "edad": "29",
+        "fondo": [
+            {
+                "id": 1,
+                "imagen": "https://res.cloudinary.com/dmpqjroj5/image/upload/v1680449201/portfolio-francoMarcuzzi/FondoCartas/fila-1-columna-1_qwb8zb.jpg"
+            },
+            {
+                "id": 2,
+                "imagen": "https://res.cloudinary.com/dmpqjroj5/image/upload/v1680449201/portfolio-francoMarcuzzi/FondoCartas/fila-1-columna-2_mhbfpw.jpg"
+            },
+            {
+                "id": 3,
+                "imagen": "https://res.cloudinary.com/dmpqjroj5/image/upload/v1680449201/portfolio-francoMarcuzzi/FondoCartas/fila-1-columna-3_hk4u5t.jpg"
+            },
+            {
+                "id": 4,
+                "imagen": "https://res.cloudinary.com/dmpqjroj5/image/upload/v1680449201/portfolio-francoMarcuzzi/FondoCartas/fila-1-columna-4_vd5jfz.jpg"
+            },
+            {
+                "id": 5,
+                "imagen": "https://res.cloudinary.com/dmpqjroj5/image/upload/v1680449201/portfolio-francoMarcuzzi/FondoCartas/fila-2-columna-1_epcvyx.jpg"
+            },
+            {
+                "id": 6,
+                "imagen": "https://res.cloudinary.com/dmpqjroj5/image/upload/v1680449201/portfolio-francoMarcuzzi/FondoCartas/fila-2-columna-2_u976l5.jpg"
+            },
+            {
+                "id": 7,
+                "imagen": "https://res.cloudinary.com/dmpqjroj5/image/upload/v1680449201/portfolio-francoMarcuzzi/FondoCartas/fila-2-columna-3_poujtx.jpg"
+            },
+            {
+                "id": 8,
+                "imagen": "https://res.cloudinary.com/dmpqjroj5/image/upload/v1680449201/portfolio-francoMarcuzzi/FondoCartas/fila-2-columna-4_t8ybyw.jpg"
+            }
+        ],
+        "descripcion": "Autodidacta, mientras tenga internet siempre estoy viendo que temas relacionados a la computación puedo aprender, esto me ha llevado siempre a hacer un poco de todo y no especializándome en nada en particular en relación a la programación. Como resultado  me dio la posibilidad de cambiar y adaptarme de un sistema  a otro con rapidez, no soy fanático de ningún lenguaje ni sistema en particular",
+        "proyectos": [
+            {
+                "id": 1,
+                "nombre": "Sistema de control hornos industriales",
+                "descripcion": "Se programo un micro-controlador arduino para hacer de controlador de un horno electrico permitiendo controlar su temperatura.",
+                "fecha_inicio": "2013-02-08",
+                "fecha_fin": "2014-10-24",
+                "estado": "Completado"
+            },
+            {
+                "id": 2,
+                "nombre": "Prototipo de gestion y control de prensas hidraulicas.",
+                "descripcion": "Se programo un micro-controlador arduino para gestionar la operacion y trabajo mediante sensores magneticos de una prensa hidraulica,utilizada en la fabricacion de puertas",
+                "fecha_inicio": "2014-02-04",
+                "fecha_fin": "2014-03-07",
+                "estado": "Prototipo"
+            }
+        ],
+        "imagen": "https://img.icons8.com/fluency/256/administrator-male.png",
+        "imagen2": "",
+        "idiomas": [
+            {
+                "id": 1,
+                "lengua": "Español",
+                "estado": "Hablante",
+                "bandera": "https://img.icons8.com/color/256/spain.png"
+            },
+            {
+                "id": 2,
+                "lengua": "Ingles",
+                "estado": "Estudiando",
+                "bandera": "https://img.icons8.com/office/256/great-britain.png"
+            },
+            {
+                "id": 3,
+                "lengua": "Italiano",
+                "estado": "Estudiando",
+                "bandera": "https://img.icons8.com/officel/256/italy.png"
+            }
+        ],
+        "lenguajes_programacion": [
+            {
+                "id": 1,
+                "nombre": "C#",
+                "experiencia": "Utilizando tecnologías como entity framework, en la construcción de micro-servicios.",
+                "logo": "https://img.icons8.com/color/256/c-sharp-logo.png"
+            },
+            {
+                "id": 2,
+                "nombre": "Java",
+                "experiencia": "Utilizado para construir interfaces mediante Swing. Actualmente utilizado para programar bajo tecnologías Android",
+                "logo": "https://cdn-icons-png.flaticon.com/512/5968/5968282.png"
+            },
+            {
+                "id": 3,
+                "nombre": "Javascript",
+                "experiencia": "Utilizado a para la contruccion de BFF(back-for-front) para el desarrollo de arquitecturas de micro-servicios.",
+                "logo": "https://cdn-icons-png.flaticon.com/512/5968/5968292.png"
+            },
+            {
+                "id": 4,
+                "nombre": "SQL",
+                "experiencia": "Como lenguaje base para programar logica de negocio en la creacion de STORE-PROCEDURE",
+                "logo": "https://cdn-icons-png.flaticon.com/512/5815/5815478.png"
+            },
+            {
+                "id": 5,
+                "nombre": "Android Native",
+                "experiencia": "Maquetado de pantallas android.",
+                "logo": "https://cdn-icons-png.flaticon.com/512/270/270780.png"
+            }
+        ],
+        "experiencia_laboral": [
+            {
+                "id": 1,
+                "nombre": "Maestro de robotica para los cursos de 5to y 6to grdo",
+                "descripcion": "Enseñé robótica a niños de 5to y 6to año en el Plan Nacional de Robótica AREYA. Fue una experiencia gratificante ver cómo se involucraban en la construcción y programación de robots. Desarrollé habilidades pedagógicas y aprendí a adaptar mi enseñanza a las necesidades de cada estudiante. Trabajar en AREYA fue una experiencia enriquecedora que me ayudó a crecer personal y profesionalmente.",
+                "fecha_inicio": "2019-01-01",
+                "fecha_fin": "2019-12-31",
+                "imagenes": [
+                    {
+                        "id": 1,
+                        "imagen": "https://res.cloudinary.com/dmpqjroj5/image/upload/v1680449176/portfolio-francoMarcuzzi/fotos%20Seccionadas/trabajo%20profesor/fila-1-columna-1_pd8hcp.jpg"
+                    },
+                    {
+                        "id": 2,
+                        "imagen": "https://res.cloudinary.com/dmpqjroj5/image/upload/v1680449176/portfolio-francoMarcuzzi/fotos%20Seccionadas/trabajo%20profesor/fila-1-columna-2_kzss1m.jpg"
+                    },
+                    {
+                        "id": 3,
+                        "imagen": "https://res.cloudinary.com/dmpqjroj5/image/upload/v1680449176/portfolio-francoMarcuzzi/fotos%20Seccionadas/trabajo%20profesor/fila-1-columna-3_vcz9j7.jpg"
+                    },
+                    {
+                        "id": 4,
+                        "imagen": "https://res.cloudinary.com/dmpqjroj5/image/upload/v1680449176/portfolio-francoMarcuzzi/fotos%20Seccionadas/trabajo%20profesor/fila-1-columna-4_dhjo8d.jpg"
+                    },
+                    {
+                        "id": 5,
+                        "imagen": "https://res.cloudinary.com/dmpqjroj5/image/upload/v1680449176/portfolio-francoMarcuzzi/fotos%20Seccionadas/trabajo%20profesor/fila-2-columna-1_mqwbc1.jpg"
+                    },
+                    {
+                        "id": 6,
+                        "imagen": "https://res.cloudinary.com/dmpqjroj5/image/upload/v1680449176/portfolio-francoMarcuzzi/fotos%20Seccionadas/trabajo%20profesor/fila-2-columna-2_nggu0c.jpg"
+                    },
+                    {
+                        "id": 7,
+                        "imagen": "https://res.cloudinary.com/dmpqjroj5/image/upload/v1680449176/portfolio-francoMarcuzzi/fotos%20Seccionadas/trabajo%20profesor/fila-2-columna-3_g92xsw.jpg"
+                    },
+                    {
+                        "id": 8,
+                        "imagen": "https://res.cloudinary.com/dmpqjroj5/image/upload/v1680449176/portfolio-francoMarcuzzi/fotos%20Seccionadas/trabajo%20profesor/fila-2-columna-4_sr11ac.jpg"
+                    }
+                ],
+                "imagenes2": [
+                    {
+                        "id": 1,
+                        "imagen": "https://res.cloudinary.com/dmpqjroj5/image/upload/v1680450757/portfolio-francoMarcuzzi/fotos%20Seccionadas/trabajo%20profesor/proyectoAuto/fila-1-columna-1_uzzivw.jpg"
+                    },
+                    {
+                        "id": 2,
+                        "imagen": "https://res.cloudinary.com/dmpqjroj5/image/upload/v1680450757/portfolio-francoMarcuzzi/fotos%20Seccionadas/trabajo%20profesor/proyectoAuto/fila-1-columna-2_b9bzgy.jpg"
+                    },
+                    {
+                        "id": 3,
+                        "imagen": "https://res.cloudinary.com/dmpqjroj5/image/upload/v1680450757/portfolio-francoMarcuzzi/fotos%20Seccionadas/trabajo%20profesor/proyectoAuto/fila-1-columna-3_uv11aw.jpg"
+                    },
+                    {
+                        "id": 4,
+                        "imagen": "https://res.cloudinary.com/dmpqjroj5/image/upload/v1680450757/portfolio-francoMarcuzzi/fotos%20Seccionadas/trabajo%20profesor/proyectoAuto/fila-1-columna-4_z9wiik.jpg"
+                    },
+                    {
+                        "id": 5,
+                        "imagen": "https://res.cloudinary.com/dmpqjroj5/image/upload/v1680450757/portfolio-francoMarcuzzi/fotos%20Seccionadas/trabajo%20profesor/proyectoAuto/fila-2-columna-1_haps6c.jpg"
+                    },
+                    {
+                        "id": 6,
+                        "imagen": "https://res.cloudinary.com/dmpqjroj5/image/upload/v1680450757/portfolio-francoMarcuzzi/fotos%20Seccionadas/trabajo%20profesor/proyectoAuto/fila-2-columna-2_zmqlf0.jpg"
+                    },
+                    {
+                        "id": 7,
+                        "imagen": "https://res.cloudinary.com/dmpqjroj5/image/upload/v1680450758/portfolio-francoMarcuzzi/fotos%20Seccionadas/trabajo%20profesor/proyectoAuto/fila-2-columna-3_usr26b.jpg"
+                    },
+                    {
+                        "id": 8,
+                        "imagen": "https://res.cloudinary.com/dmpqjroj5/image/upload/v1680450757/portfolio-francoMarcuzzi/fotos%20Seccionadas/trabajo%20profesor/proyectoAuto/fila-2-columna-4_tyfvj8.jpg"
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "nombre": "Desarrollador free-lance y luego como empleado en un software factory llamada Squad",
+                "descripcion": "Como desarrollador de diferentes proyectos utilizando varias de mi perfil tecnologias",
+                "fecha_inicio": "2020-01-01",
+                "fecha_fin": "2021-06-01",
+                "imagenes": [
+                    {
+                        "id": 1,
+                        "imagen": "https://res.cloudinary.com/dmpqjroj5/image/upload/v1680449176/portfolio-francoMarcuzzi/fotos%20Seccionadas/trabajo%20profesor/fila-1-columna-1_pd8hcp.jpg"
+                    },
+                    {
+                        "id": 2,
+                        "imagen": "https://res.cloudinary.com/dmpqjroj5/image/upload/v1680449176/portfolio-francoMarcuzzi/fotos%20Seccionadas/trabajo%20profesor/fila-1-columna-2_kzss1m.jpg"
+                    },
+                    {
+                        "id": 3,
+                        "imagen": "https://res.cloudinary.com/dmpqjroj5/image/upload/v1680449176/portfolio-francoMarcuzzi/fotos%20Seccionadas/trabajo%20profesor/fila-1-columna-3_vcz9j7.jpg"
+                    },
+                    {
+                        "id": 4,
+                        "imagen": "https://res.cloudinary.com/dmpqjroj5/image/upload/v1680449176/portfolio-francoMarcuzzi/fotos%20Seccionadas/trabajo%20profesor/fila-1-columna-4_dhjo8d.jpg"
+                    },
+                    {
+                        "id": 5,
+                        "imagen": "https://res.cloudinary.com/dmpqjroj5/image/upload/v1680449176/portfolio-francoMarcuzzi/fotos%20Seccionadas/trabajo%20profesor/fila-2-columna-1_mqwbc1.jpg"
+                    },
+                    {
+                        "id": 6,
+                        "imagen": "https://res.cloudinary.com/dmpqjroj5/image/upload/v1680449176/portfolio-francoMarcuzzi/fotos%20Seccionadas/trabajo%20profesor/fila-2-columna-2_nggu0c.jpg"
+                    },
+                    {
+                        "id": 7,
+                        "imagen": "https://res.cloudinary.com/dmpqjroj5/image/upload/v1680449176/portfolio-francoMarcuzzi/fotos%20Seccionadas/trabajo%20profesor/fila-2-columna-3_g92xsw.jpg"
+                    },
+                    {
+                        "id": 8,
+                        "imagen": "https://res.cloudinary.com/dmpqjroj5/image/upload/v1680449176/portfolio-francoMarcuzzi/fotos%20Seccionadas/trabajo%20profesor/fila-2-columna-4_sr11ac.jpg"
+                    }
+                ],
+                "imagenes2": [
+                    {
+                        "id": 1,
+                        "imagen": "https://res.cloudinary.com/dmpqjroj5/image/upload/v1680450757/portfolio-francoMarcuzzi/fotos%20Seccionadas/trabajo%20profesor/proyectoAuto/fila-1-columna-1_uzzivw.jpg"
+                    },
+                    {
+                        "id": 2,
+                        "imagen": "https://res.cloudinary.com/dmpqjroj5/image/upload/v1680450757/portfolio-francoMarcuzzi/fotos%20Seccionadas/trabajo%20profesor/proyectoAuto/fila-1-columna-2_b9bzgy.jpg"
+                    },
+                    {
+                        "id": 3,
+                        "imagen": "https://res.cloudinary.com/dmpqjroj5/image/upload/v1680450757/portfolio-francoMarcuzzi/fotos%20Seccionadas/trabajo%20profesor/proyectoAuto/fila-1-columna-3_uv11aw.jpg"
+                    },
+                    {
+                        "id": 4,
+                        "imagen": "https://res.cloudinary.com/dmpqjroj5/image/upload/v1680450757/portfolio-francoMarcuzzi/fotos%20Seccionadas/trabajo%20profesor/proyectoAuto/fila-1-columna-4_z9wiik.jpg"
+                    },
+                    {
+                        "id": 5,
+                        "imagen": "https://res.cloudinary.com/dmpqjroj5/image/upload/v1680450757/portfolio-francoMarcuzzi/fotos%20Seccionadas/trabajo%20profesor/proyectoAuto/fila-2-columna-1_haps6c.jpg"
+                    },
+                    {
+                        "id": 6,
+                        "imagen": "https://res.cloudinary.com/dmpqjroj5/image/upload/v1680450757/portfolio-francoMarcuzzi/fotos%20Seccionadas/trabajo%20profesor/proyectoAuto/fila-2-columna-2_zmqlf0.jpg"
+                    },
+                    {
+                        "id": 7,
+                        "imagen": "https://res.cloudinary.com/dmpqjroj5/image/upload/v1680450758/portfolio-francoMarcuzzi/fotos%20Seccionadas/trabajo%20profesor/proyectoAuto/fila-2-columna-3_usr26b.jpg"
+                    },
+                    {
+                        "id": 8,
+                        "imagen": "https://res.cloudinary.com/dmpqjroj5/image/upload/v1680450757/portfolio-francoMarcuzzi/fotos%20Seccionadas/trabajo%20profesor/proyectoAuto/fila-2-columna-4_tyfvj8.jpg"
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "nombre": "Desarrollador empleado por Galicia-Seguros",
+                "descripcion": "Actualmente trabajando para Galicia-Seguros en la creacion de plataformas orientas al manejo de seguros.",
+                "fecha_inicio": "2020-01-01",
+                "fecha_fin": "",
+                "imagenes": [
+                    {
+                        "id": 1,
+                        "imagen": "https://res.cloudinary.com/dmpqjroj5/image/upload/v1680449176/portfolio-francoMarcuzzi/fotos%20Seccionadas/trabajo%20profesor/fila-1-columna-1_pd8hcp.jpg"
+                    },
+                    {
+                        "id": 2,
+                        "imagen": "https://res.cloudinary.com/dmpqjroj5/image/upload/v1680449176/portfolio-francoMarcuzzi/fotos%20Seccionadas/trabajo%20profesor/fila-1-columna-2_kzss1m.jpg"
+                    },
+                    {
+                        "id": 3,
+                        "imagen": "https://res.cloudinary.com/dmpqjroj5/image/upload/v1680449176/portfolio-francoMarcuzzi/fotos%20Seccionadas/trabajo%20profesor/fila-1-columna-3_vcz9j7.jpg"
+                    },
+                    {
+                        "id": 4,
+                        "imagen": "https://res.cloudinary.com/dmpqjroj5/image/upload/v1680449176/portfolio-francoMarcuzzi/fotos%20Seccionadas/trabajo%20profesor/fila-1-columna-4_dhjo8d.jpg"
+                    },
+                    {
+                        "id": 5,
+                        "imagen": "https://res.cloudinary.com/dmpqjroj5/image/upload/v1680449176/portfolio-francoMarcuzzi/fotos%20Seccionadas/trabajo%20profesor/fila-2-columna-1_mqwbc1.jpg"
+                    },
+                    {
+                        "id": 6,
+                        "imagen": "https://res.cloudinary.com/dmpqjroj5/image/upload/v1680449176/portfolio-francoMarcuzzi/fotos%20Seccionadas/trabajo%20profesor/fila-2-columna-2_nggu0c.jpg"
+                    },
+                    {
+                        "id": 7,
+                        "imagen": "https://res.cloudinary.com/dmpqjroj5/image/upload/v1680449176/portfolio-francoMarcuzzi/fotos%20Seccionadas/trabajo%20profesor/fila-2-columna-3_g92xsw.jpg"
+                    },
+                    {
+                        "id": 8,
+                        "imagen": "https://res.cloudinary.com/dmpqjroj5/image/upload/v1680449176/portfolio-francoMarcuzzi/fotos%20Seccionadas/trabajo%20profesor/fila-2-columna-4_sr11ac.jpg"
+                    }
+                ],
+                "imagenes2": [
+                    {
+                        "id": 1,
+                        "imagen": "https://res.cloudinary.com/dmpqjroj5/image/upload/v1680450757/portfolio-francoMarcuzzi/fotos%20Seccionadas/trabajo%20profesor/proyectoAuto/fila-1-columna-1_uzzivw.jpg"
+                    },
+                    {
+                        "id": 2,
+                        "imagen": "https://res.cloudinary.com/dmpqjroj5/image/upload/v1680450757/portfolio-francoMarcuzzi/fotos%20Seccionadas/trabajo%20profesor/proyectoAuto/fila-1-columna-2_b9bzgy.jpg"
+                    },
+                    {
+                        "id": 3,
+                        "imagen": "https://res.cloudinary.com/dmpqjroj5/image/upload/v1680450757/portfolio-francoMarcuzzi/fotos%20Seccionadas/trabajo%20profesor/proyectoAuto/fila-1-columna-3_uv11aw.jpg"
+                    },
+                    {
+                        "id": 4,
+                        "imagen": "https://res.cloudinary.com/dmpqjroj5/image/upload/v1680450757/portfolio-francoMarcuzzi/fotos%20Seccionadas/trabajo%20profesor/proyectoAuto/fila-1-columna-4_z9wiik.jpg"
+                    },
+                    {
+                        "id": 5,
+                        "imagen": "https://res.cloudinary.com/dmpqjroj5/image/upload/v1680450757/portfolio-francoMarcuzzi/fotos%20Seccionadas/trabajo%20profesor/proyectoAuto/fila-2-columna-1_haps6c.jpg"
+                    },
+                    {
+                        "id": 6,
+                        "imagen": "https://res.cloudinary.com/dmpqjroj5/image/upload/v1680450757/portfolio-francoMarcuzzi/fotos%20Seccionadas/trabajo%20profesor/proyectoAuto/fila-2-columna-2_zmqlf0.jpg"
+                    },
+                    {
+                        "id": 7,
+                        "imagen": "https://res.cloudinary.com/dmpqjroj5/image/upload/v1680450758/portfolio-francoMarcuzzi/fotos%20Seccionadas/trabajo%20profesor/proyectoAuto/fila-2-columna-3_usr26b.jpg"
+                    },
+                    {
+                        "id": 8,
+                        "imagen": "https://res.cloudinary.com/dmpqjroj5/image/upload/v1680450757/portfolio-francoMarcuzzi/fotos%20Seccionadas/trabajo%20profesor/proyectoAuto/fila-2-columna-4_tyfvj8.jpg"
+                    }
+                ]
+            }
+        ],
+        "experiencia_cursos": [
+            {
+                "id": 1,
+                "empresa": "Alkemy",
+                "descripcion": "Realice un curso de aceleración de una empresa llamada Alkemy donde se llevó a cabo la construcción de un sitio Web utilizando tecnologías de .NET",
+                "fecha_inicio": "2021-01-01",
+                "fecha_fin": "2021-03-01",
+                "estado": "Terminado"
+            },
+            {
+                "id": 2,
+                "empresa": "Coder House",
+                "descripcion": "Curso de Javascript",
+                "fecha_inicio": "2022-07-01",
+                "fecha_fin": "2022-09-01",
+                "estado": "Terminado"
+            },
+            {
+                "id": 3,
+                "empresa": "Coder House",
+                "descripcion": "Curso de React",
+                "fecha_inicio": "2022-07-01",
+                "fecha_fin": "2022-09-01",
+                "estado": "Terminado"
+            }
+        ]
+    }
 }
