@@ -4,12 +4,20 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
+      dropShadow:{
+        'white': '3px -2px 7px #5A5858',
+        'black':'3px -2px 7px #E4DFDF',
+      },
       colors: {
         dark: "#1a202c",
         colorNoise: "#111111",
       },
       backgroundImage: {
         imageNoise: "url('/src/assets/noise-transparent.png')",
+        bgWhite: "url(https://res.cloudinary.com/dcpcja2qg/image/upload/v1680013353/bgWhite_nigwyc.png)",
+        bgDark: "url(https://res.cloudinary.com/dcpcja2qg/image/upload/v1680013353/bgDark_jujnzh.png)",
+        White: "url(https://res.cloudinary.com/dcpcja2qg/image/upload/v1680018284/bg_bggenerator_com_dfz3zj.png)",
+        Dark: "url(https://res.cloudinary.com/dcpcja2qg/image/upload/v1680018275/bg_bggenerator_com_1_e6t89u.png)",
       },
       animation: {
         bganimation: "bganimation 1s infinite",
