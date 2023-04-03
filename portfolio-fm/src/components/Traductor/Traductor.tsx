@@ -22,10 +22,10 @@ const changeL = () => {
     <div>
       <button onClick={changeL}>
         {language === "es" ? (
-           <img src="https://img.icons8.com/emoji/42/spain-emoji.png" alt="es" />
+           <img src="https://img.icons8.com/emoji/42/spain-emoji.png" alt="es-flag" />
          
         ) : (
-          <img src="https://img.icons8.com/emoji/42/united-kingdom-emoji.png" alt="en" />
+          <img src="https://img.icons8.com/emoji/42/united-kingdom-emoji.png" alt="en-flag" />
         )}
       </button>
     </div>
