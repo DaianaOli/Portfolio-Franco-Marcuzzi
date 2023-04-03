@@ -1,0 +1,84 @@
+{   "Ver mas" : "See more",
+    "Ver menos" :"See Less",
+    "Sobre mi": "About me",
+    "Soy": "I am",
+    "tengo": "I am",
+    "años.": "years old.",
+    "Podes comunicarte conmigo via": "You can contact me via",
+    "Idiomas": "Languages",
+    "Lenguajes de programacion": "Programming languages",
+    "Experiencia laboral": "Work experience",
+    "Cursos": "Courses",
+    "Descargar CV": "Download CV",
+    "Proyectos": "Proyects",
+    "Volver": "Back",
+    "Español" : "Spanish",
+    "Ingles" : "English",
+    "Italiano" : "Italian",
+    "Hablante": "Speaker",
+    "Estudiando": "Studying",
+    "Completado": "Filled",
+    "Prototipo": "Prototype",
+    "Utilizando tecnologías como entity framework, en la construcción de micro-servicios.": "Using technologies such as entity framework, in the construction of micro-services.",
+    "descripcion": "Self-taught, as long as I have internet I am always looking for topics related to computing I can learn, this has always led me to do a little of everything and not specializing in anything in particular in relation to programming. As a result it gave me the ability to switch and adapt from one system to another very quickly, I'm not a fan of any particular language or system",
+    "Utilizado para construir interfaces mediante Swing. Actualmente utilizado para programar bajo tecnologías Android" : "Used to build interfaces using Swing. Currently used to program under Android technologies",
+    "Utilizado a para la contruccion de BFF(back-for-front) para el desarrollo de arquitecturas de micro-servicios.": "Used for the construction of BFF (back-for-front) for the development of micro-services architectures.",   
+    "Como lenguaje base para programar logica de negocio en la creacion de STORE-PROCEDURE": "As a base language for programming business logic in the creation of STORE-PROCEDURE",
+    "Maquetado de pantallas android." :"Android screen layout.",
+    "Desarrollador Backend con experiencia en múltiples tecnologías": "Backend developer with experience in multiple technologies",
+    "Me especializo en la creación de aplicaciones robustas y escalables.": "I specialize in creating robust and scalable applications.",
+    "Sistema de control hornos industriales": "Industrial furnace control system",
+    "Se programo un micro-controlador arduino para hacer de controlador de un horno electrico permitiendo controlar su temperatura.": "An arduino microcontroller will be programmed to act as a controller for an electric oven allowing its temperature to be controlled.",
+    "Prototipo de gestion y control de prensas hidraulicas.": "Prototype of management and control of hydraulic presses.",
+    "Se programo un micro-controlador arduino para gestionar la operacion y trabajo mediante sensores magneticos de una prensa hidraulica,utilizada en la fabricacion de puertas": "An arduino microcontroller will be programmed to manage cooperation and work through magnetic sensors of a hydraulic press, used in the manufacture of doors.",
+        "experiencia_laboral": [
+            {
+                "id": 1,
+                "nombre": "Robotics teacher for 5th and 6th grade courses",
+                "descripcion": "I worked as a teacher in the AREYA National Robotics Plan, which was contemplated for students in the 5th and 6th year of primary school.",
+                "fecha_inicio": "2019-01-01",
+                "fecha_fin": "2019-12-31"
+            },
+            {
+                "id": 2,
+                "nombre": "Freelance developer and then as an employee at a software factory called Squad",
+                "descripcion": "As a developer of different projects using various technologies of my profile",
+                "fecha_inicio": "2020-01-01",
+                "fecha_fin": "2021-06-01"
+            },
+            {
+                "id": 3,
+                "nombre": "Developer employed by Galicia-Seguros",
+                "descripcion": "Currently working for Galicia-Seguros in the creation of platforms oriented to insurance management.",
+                "fecha_inicio": "2020-01-01",
+                "fecha_fin": ""
+            }
+        ],
+        "experiencia_cursos": [
+            {
+                "id": 1,
+                "empresa": "Alkemy",
+                "descripcion": "I took a crash course from a company called Alkemy where they built a website using .NET technologies.",
+                "fecha_inicio": "2021-01-01",
+                "fecha_fin": "2021-03-01",
+                "estado": "Finished"
+            },
+            {
+                "id": 2,
+                "empresa": "Coder House",
+                "descripcion": "Javascript course",
+                "fecha_inicio": "2022-07-01",
+                "fecha_fin": "2022-09-01",
+                "estado": "Finished"
+            },
+            {
+                "id": 3,
+                "empresa": "Coder House",
+                "descripcion": "React course",
+                "fecha_inicio": "2022-07-01",
+                "fecha_fin": "2022-09-01",
+                "estado": "Finished"
+            }
+        ]
+    }
+   

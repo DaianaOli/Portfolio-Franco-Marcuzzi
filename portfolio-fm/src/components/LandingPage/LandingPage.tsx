@@ -1,5 +1,6 @@
 import  {useState} from 'react';
 import fondo from '../../assets/fondo.png'
+import { useTranslation } from 'react-i18next';
 
 type Properties<T> = { [key: string]: T };
 
@@ -10,12 +11,12 @@ interface CustomCSSProperties extends React.CSSProperties {
 
 const LandingPage = () => {
   const [hover, setHover] = useState(false);
+  const {t} = useTranslation()
   const style: CustomCSSProperties = {
     '--delay': '0.1s',
     transitionDelay: '0.5s',
     backgroundImage: fondo
   };
-  console.log(hover)
 
   const tablets = {
     front: ['F', 'r', 'a', 'n', 'c', 'o', ' ', 'A', '.', 'M', 'a', 'r', 'c', 'u', 'z', 'z', 'i', ' '],
@@ -58,8 +59,8 @@ const LandingPage = () => {
             alt='avatar' src={fondo}/>
               <div className='absolute text-white text-center w-full
               h-auto md:top-1/4 lg:top-1/4 '>
-                 <h1 className='text-2xl  md:text-3xl lg:text-4xl shadow-sm font-mono tran group-hover:translate-y-5 lg:group-hover:translate-y-10 duration-1000 '>Desarrollador Backend con experiencia en múltiples tecnologías &#x1F9D1;&#x200D;&#x1F4BB;</h1>
-                 <p className='mt-14 opacity-0 group-hover:translate-y-5 lg:group-hover:translate-y-10 group-hover:opacity-100 duration-1000 delay-500' > Me especializo en la creación de aplicaciones robustas y escalables.</p>
+                 <h1 className='text-2xl  md:text-3xl lg:text-4xl shadow-sm font-mono tran group-hover:translate-y-5 lg:group-hover:translate-y-10 duration-1000 '>{t("Desarrollador Backend con experiencia en múltiples tecnologías")} &#x1F9D1;&#x200D;&#x1F4BB;</h1>
+                 <p className='mt-14 opacity-0 group-hover:translate-y-5 lg:group-hover:translate-y-10 group-hover:opacity-100 duration-1000 delay-500' > {t("Me especializo en la creación de aplicaciones robustas y escalables.")}</p>
               </div>
         <img
           className=" absolute object-cover w-full h-full group-hover:opacity-0 duration-1000 rounded "

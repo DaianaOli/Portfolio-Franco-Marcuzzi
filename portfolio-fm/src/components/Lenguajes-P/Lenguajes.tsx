@@ -1,5 +1,6 @@
 import { data } from "../../data.json";
 import DarkMode from "../DarkMode/DarkMode";
+import { useTranslation } from "react-i18next";
 
 interface Lenguaje {
   id: number;
@@ -10,6 +11,7 @@ interface Lenguaje {
 
 const Lenguajes = () => {
   const { lenguajes_programacion } = data;
+  const { t } = useTranslation();
 
   const volver = () => {
     window.history.back();
@@ -21,19 +23,20 @@ const Lenguajes = () => {
   return (
     <div className="flex flex-col bg-bgWhite dark:bg-bgDark bg-no-repeat bg-cover bg-center dark:text-white  w-full  items-center justify-between p-4 gap-4">
       <DarkMode />
-      <h1 className="font-semibold">Lenguajes de Programación</h1>
+      <h1 className="font-semibold">{t("Lenguajes de programacion")}</h1>
       <div className="flex flex-wrap gap-14 justify-center p-4">{lenguaje}</div>
       <button
         className="flex items-center gap-2 justify-center bg-slate-500 hover:bg-slate-900 text-white font-bold py-2 px-4 rounded"
         onClick={volver}
       >
-        Volver
+        {t("Volver")}
       </button>
     </div>
   );
 };
 
 const Lenguaje = ({ lenguaje }: { lenguaje: Lenguaje }) => {
+  const { t } = useTranslation();
   return (
     <div
       data-aos={lenguaje.id % 2 === 0 ? "flip-left" : "flip-right"}
@@ -53,7 +56,7 @@ const Lenguaje = ({ lenguaje }: { lenguaje: Lenguaje }) => {
         <h2 className=" text-3xl font-semibold">
           {lenguaje.nombre}
         </h2>
-        <p className="mt-2 ">{lenguaje.experiencia}</p>
+        <p className="mt-2 ">{t(lenguaje.experiencia)}</p>
       </div>
     </div>
   );
