@@ -8,16 +8,16 @@ const About = () => {
   const { t } = useTranslation();
 
   return (
-    <div id="about" className="relative flex justify-center items-center w-full flex-wrap">
-    <div className="flex flex-col sm:flex-wrap md:flex-row items-center justify-center p-4 ">
-      <div className="flex flex-col font-semibold gap-3 w-full md:w-1/2 dark:text-white ">
-        <h1>{t("Sobre mi")} </h1>
+    <div id="about" className="flex relative flex-col items-center justify-center gap-2 p-6 w-full h-screen text-black dark:text-white">
+        <h1 className="font-light text-4xl flex md:w-full items-center after:content-[''] after:w-full after:h-1 after:border-b after:border-gray-500 after:border-1 after:hidden sm:after:inline-block after:mx-6 xl:after:mx-10 dark:after:border-gray-700">{t("Sobre mi")} </h1>
+    <div className="flex flex-col sm:flex-wrap md:flex-row items-center justify-center ">
+      <div className="flex flex-col gap-2 w-full md:w-1/2">
         <div data-aos="zoom-in-up" data-aos-duration="1000"
-        className="bg-slate-400 dark:bg-gray-800 p-3 rounded-lg items-center justify-center text-center w-90% md:w-10/12">
+        className="bg-slate-400/50 dark:bg-zinc-800/60 p-3 rounded-lg items-center justify-center text-center w-90% md:w-10/12">
           <h2>
             {t("Soy")} {nombreCompleto}, {t("tengo")} {edad} {t("años.")} {t("descripcion")}
           </h2>
-          <hr className="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700" />
+          <hr className="w-48 h-1 mx-auto my-1 bg-gray-100 border-0 rounded md:my-1 dark:bg-gray-700" />
           <h4>{t ("Podes comunicarte conmigo via")}</h4>
           <div className="flex flex-row gap-2 items-center justify-center">
             <a href={github} target="_blank" rel="noreferrer">
@@ -38,7 +38,7 @@ const About = () => {
             </a>
           </div>
         </div>
-        <div className="p-3 flex flex-col gap-2 w-90% md:w-10/12" >
+        <div className="flex flex-col gap-4" >
           <Link to="idiomas">
           <button className="underline underline-offset-8" data-aos="fade-right" >
             {t("Idiomas")}
@@ -68,7 +68,7 @@ const About = () => {
         </div>
       </div>
       <div data-aos="fade-down-left" data-aos-duration="2000"
-      className="flex justify-center items-center bg-slate-300 dark:bg-gray-700 sm:w-1/2 md:w-1/3 border-dashed border-2 border-slate-600">
+      className="flex justify-center items-center sm:w-1/2 md:w-1/3">
         <img className=" w-full h-auto" src={imagen} alt={nombre} />
       </div>
     </div>

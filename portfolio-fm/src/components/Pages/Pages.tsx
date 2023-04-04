@@ -21,7 +21,6 @@ const Pages = () => {
 
   return (
     <div onWheel={changeLoading} onClick={changeLoading} className="">
-      
         <div
           className={`fixed duration-1000 z-50 top-0 left-0 right-0 bottom-0 transition-transform ${
             loading ? "" : "transform -translate-y-full "
@@ -29,7 +28,8 @@ const Pages = () => {
           <Loading />
         </div>
         <div className="overflow-hidden">
-        <div>
+          <div className="flex flex-col gap-2">
+          <div className="h-14">
           <NavBar />
         </div>
         <div>
@@ -41,8 +41,8 @@ const Pages = () => {
         <div className="h-screen">
           <About />
         </div>
+          </div>
       </div>
-    
     </div>
   );
 };

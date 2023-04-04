@@ -18,8 +18,8 @@ const Proyectos = () => {
     <Proyecto key={p.id} proyecto={p} />
   ));
   return (
-    <div className="flex relative flex-col items-center justify-center gap-4 dark:text-white p-2">
-      <h1 className="font-semibold">{t("Proyectos")}</h1>
+    <div className="flex relative flex-col items-center justify-center gap-8 dark:text-white p-6">
+      <h1 className="font-light text-4xl flex md:w-full items-center after:content-[''] after:w-full after:h-1 after:border-b after:border-gray-500 after:border-1 after:hidden sm:after:inline-block after:mx-6 xl:after:mx-10 dark:after:border-gray-700">{t("Proyectos")}</h1>
       {proyecto}
     </div>
   );
@@ -35,7 +35,7 @@ const Proyecto = ({ proyecto }: { proyecto: Proyecto }) => {
   return (
     <div 
       id="proyectos"
-      className="flex flex-row items-center justify-center w-4/5 bg-gray-500 dark:bg-slate-800"
+      className="flex flex-row items-center justify-center w-4/5 bg-slate-400/50 dark:bg-zinc-800/60"
       data-aos={proyecto.id %2 ===0? 'fade-right':'fade-left'}
       data-aos-duration="2000"
 
@@ -50,7 +50,7 @@ const Proyecto = ({ proyecto }: { proyecto: Proyecto }) => {
       <div className="w-1/2 flex flex-col items-center text-center justify-center">
         {verDetalles ? (
           <h1 
-          data-aos="fade-up"
+          data-aos="fade-down"
           data-aos-duration="2000"
           >{t(proyecto.descripcion)}</h1>
         ) : (
@@ -63,7 +63,7 @@ const Proyecto = ({ proyecto }: { proyecto: Proyecto }) => {
           </div>
         )}
 
-        <button onClick={handleVerDetalles} className="underline underline-offset-8">
+        <button onClick={handleVerDetalles}  className="underline underline-offset-8">
           {verDetalles ? (
             <h1>
             {t("Ver menos")}

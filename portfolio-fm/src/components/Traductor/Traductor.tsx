@@ -19,7 +19,7 @@ const changeL = () => {
 
 
   return (
-    <div>
+    <div className="flex items-center">
       <button onClick={changeL}>
         {language === "es" ? (
            <img src="https://img.icons8.com/emoji/42/spain-emoji.png" alt="es-flag" />

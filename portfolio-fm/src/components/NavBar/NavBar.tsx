@@ -12,9 +12,9 @@ function NavBar() {
     
 
     return (
-        <nav className="bg-gray-400 text-black dark:text-white dark:bg-zinc-900 fixed w-full z-10">
+        <nav className="bg-white text-black dark:text-white dark:bg-zinc-800 fixed w-full z-10">
             <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
-                <div className="relative flex items-center justify-between h-16">
+                <div className="relative flex items-center h-16">
                     <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                         <button
                             type="button"
@@ -71,7 +71,7 @@ function NavBar() {
   </Link>
 </div>
 <div className="hidden sm:block sm:ml-6">
-  <div className="flex space-x-4">
+  <div className="flex space-x-4 items-center">
   <a
                                     href="#home"
                                     className="bg-gray-700  px-3 py-2 rounded-md text-sm font-medium"
