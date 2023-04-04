@@ -15,7 +15,7 @@ import background from './assets/noise-transparent.png'
 function App() {
   return (
     <BrowserRouter>
-    <div className="bg-white dark:bg-colorNoise"
+    <div className="bg-white font-serif dark:bg-colorNoise"
     >
       <div className="fixed top-[-50%] bg-imageNoise left-[-50%] right-[-50%] bottom-[-50%]  animate-bganimation w- [200%] h-[200vh] ">
         </div>

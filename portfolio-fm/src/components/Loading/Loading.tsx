@@ -9,11 +9,16 @@ const Loading = () => {
     },[])
 
     return (
-        <div className="w-full h-screen flex flex-col items-center justify-center bg-black">
-        <div className="animate-pulse" data-aos="fade-down" data-aos-duration="2000" data-aos-once="true">
-            <img src={logo} alt="logo" className="w-60 h-60 mx-auto" />
-        </div>
-            <h1 data-aos="zoom-in" data-aos-duration="2000" className="text-center text-white font-serif font-bold text-2xl">Desarrollador Backend</h1>
+        <div className="w-full text-white h-screen flex flex-col bg-black">
+            <div className="flex flex-col justify-end w-full h-3/6 ">
+                <h1 data-aos="zoom-in" data-aos-duration="2000" className="text-center  font-serif  text-9xl">FM</h1>
+            </div>
+            <div  data-aos="fade-up"
+                 data-aos-duration="1500"
+                 data-aos-delay="1000"
+                   className=" flex flex-col h-3/6 justify-end  items-center  ">
+                <h1 className="  animate-bounce mb-20 text-5xl" >﹀</h1>
+            </div>
         </div>
     );
     };
