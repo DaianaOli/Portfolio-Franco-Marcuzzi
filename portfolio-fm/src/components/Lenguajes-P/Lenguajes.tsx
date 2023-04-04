@@ -21,7 +21,7 @@ const Lenguajes = () => {
     <Lenguaje key={l.id} lenguaje={l} />
   ));
   return (
-    <div className="flex flex-col bg-bgWhite dark:bg-bgDark bg-no-repeat bg-cover bg-center dark:text-white  w-full  items-center justify-between p-4 gap-4">
+    <div className="flex relative flex-col bg-bgWhite dark:bg-bgDark bg-no-repeat bg-cover bg-center dark:text-white  w-full  items-center justify-between p-4 gap-4">
       <DarkMode />
       <h1 className="font-semibold">{t("Lenguajes de programacion")}</h1>
       <div className="flex flex-wrap gap-14 justify-center p-4">{lenguaje}</div>
