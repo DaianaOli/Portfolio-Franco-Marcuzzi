@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import { data } from '../../data.json';
-
+import DarkMode from '../DarkMode/DarkMode';
+import { useTransition } from 'react';
+import { useTranslation } from 'react-i18next';
 
 
 
@@ -25,7 +27,7 @@ interface Imagenes {
 function Experiencia({ experiencia }: { experiencia: ExperienciaLaboral }) {
   const [hover, setHover] = useState(false);
   const [statePhotos, setStatePhotos] = useState(0)
- 
+ const { t} = useTranslation()
   
   
   useEffect(() => {
@@ -49,21 +51,21 @@ function Experiencia({ experiencia }: { experiencia: ExperienciaLaboral }) {
 
 
   return (
-    <div  className="flex flex-col h-screen w-full justify-center "
+    <div  className="flex flex-col h-screen w-full justify-center gap-6 "
    >
-      <h1 className=" mx-4 text-4xl text-gray-300">{experiencia.nombre}</h1>
+      <h1 className=" mx-4 text-4xl text-gray-900 dark:text-gray-300">{t(experiencia.nombre)}</h1>
       <div className="flex items-center  m-4 h-3/5"
        >
         <div data-aos="fade-right" className="flex flex-col text-3xl gap-5   text-gray-600  w-2/4">
-          <h1>{experiencia.descripcion}</h1>
+          <h1>{t(experiencia.descripcion)}</h1>
           <div className="mt-2">
             <p data-aos="fade-right">
-              Fecha de inicio:{' '}
-              <span className="text-white">{experiencia.fecha_inicio}</span>
+              {t("Fecha de inicio:")}{' '}
+              <span className="text-gray-900 dark:text-white">{experiencia.fecha_inicio}</span>
             </p>
             <p data-aos="fade-right">
-              Fecha fin:{' '}
-              <span  className="text-white">{experiencia.fecha_fin}</span>
+            {t("Fecha de fin:")}{' '}
+              <span  className="text-gray-900 dark:text-white">{experiencia.fecha_fin}</span>
             </p>
           </div>
         </div>
@@ -115,6 +117,7 @@ function Experiencia({ experiencia }: { experiencia: ExperienciaLaboral }) {
 
 function Experiencias() {
   const { experiencia_laboral } = data;
+  const {t} = useTranslation()
 
   const scrollToTop = () => {
     window.scroll({
@@ -131,15 +134,26 @@ function Experiencias() {
 
   }, []);
 
+  const volver = () => {
+    window.history.back();
+  }
+
   return (
-    <div className=" relative flex flex-col font-serif w-full h-full items-center">
-      <p className="flex mt-20 h-auto  text-6xl text-white">
-        Experiencia Laboral
+    <div className="relative flex flex-col font-serif w-full h-full items-center p-8 gap-6">
+      <DarkMode/>
+      <p className="flex h-auto  text-6xl dark:text-white">
+        {t("Experiencia laboral")}
       </p>
       
       {experiencia_laboral.map((e: ExperienciaLaboral) => (
         <Experiencia key={e.id} experiencia={e} />
       ))}
+       <button 
+            className="flex items-center gap-2 justify-center bg-slate-500 hover:bg-slate-900 text-white font-bold py-2 px-4 rounded"
+            onClick={volver}
+            >
+               {t("Volver")}
+            </button>
     </div>
   );
 }

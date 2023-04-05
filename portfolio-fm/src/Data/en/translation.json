@@ -31,29 +31,14 @@
     "Se programo un micro-controlador arduino para hacer de controlador de un horno electrico permitiendo controlar su temperatura.": "An arduino microcontroller will be programmed to act as a controller for an electric oven allowing its temperature to be controlled.",
     "Prototipo de gestion y control de prensas hidraulicas.": "Prototype of management and control of hydraulic presses.",
     "Se programo un micro-controlador arduino para gestionar la operacion y trabajo mediante sensores magneticos de una prensa hidraulica,utilizada en la fabricacion de puertas": "An arduino microcontroller will be programmed to manage cooperation and work through magnetic sensors of a hydraulic press, used in the manufacture of doors.",
-        "experiencia_laboral": [
-            {
-                "id": 1,
-                "nombre": "Robotics teacher for 5th and 6th grade courses",
-                "descripcion": "I worked as a teacher in the AREYA National Robotics Plan, which was contemplated for students in the 5th and 6th year of primary school.",
-                "fecha_inicio": "2019-01-01",
-                "fecha_fin": "2019-12-31"
-            },
-            {
-                "id": 2,
-                "nombre": "Freelance developer and then as an employee at a software factory called Squad",
-                "descripcion": "As a developer of different projects using various technologies of my profile",
-                "fecha_inicio": "2020-01-01",
-                "fecha_fin": "2021-06-01"
-            },
-            {
-                "id": 3,
-                "nombre": "Developer employed by Galicia-Seguros",
-                "descripcion": "Currently working for Galicia-Seguros in the creation of platforms oriented to insurance management.",
-                "fecha_inicio": "2020-01-01",
-                "fecha_fin": ""
-            }
-        ],
+    "Maestro de robotica para los cursos de 5to y 6to grdo": "Robotics teacher for 5th and 6th grade courses",
+    "Enseñé robótica a niños de 5to y 6to año en el Plan Nacional de Robótica AREYA. Fue una experiencia gratificante ver cómo se involucraban en la construcción y programación de robots. Desarrollé habilidades pedagógicas y aprendí a adaptar mi enseñanza a las necesidades de cada estudiante. Trabajar en AREYA fue una experiencia enriquecedora que me ayudó a crecer personal y profesionalmente." :  "I taught robotics to 5th and 6th year children in the AREYA National Robotics Plan. It was a rewarding experience to see them get involved in building and programming robots. I developed pedagogical skills and learned to adapt my teaching to the needs of each student. Working at AREYA was an enriching experience that helped me grow personally and professionally.",
+    "Desarrollador freelance y luego como empleado en un software factory llamada Squad": "Freelance developer and then as an employee at a software factory called Squad",
+    "Como desarrollador de diferentes proyectos utilizando varias de mi perfil tecnologias":  "As a developer of different projects using various technologies of my profile",
+    "Desarrollador empleado por Galicia-Seguros":"Developer employed by Galicia-Seguros",
+    "Actualmente trabajando para Galicia-Seguros en la creacion de plataformas orientas al manejo de seguros.": "Currently working for Galicia-Seguros in the creation of platforms oriented to insurance management.",
+    "Fecha de inicio:": "Start date:",
+    "Fecha de fin:": "End date:",
         "experiencia_cursos": [
             {
                 "id": 1,

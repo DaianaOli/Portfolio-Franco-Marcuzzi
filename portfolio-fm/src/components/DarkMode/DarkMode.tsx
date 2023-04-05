@@ -28,7 +28,7 @@ const DarkMode = () => {
       window.removeEventListener('hashchange', onUrlChange);
     };
   }, []);
-  console.log(isDarkMode)
+  
   return (
     <div className='flex items-center'>
  <button

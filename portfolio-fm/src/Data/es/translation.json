@@ -31,40 +31,13 @@
     "Se programo un micro-controlador arduino para hacer de controlador de un horno electrico permitiendo controlar su temperatura.": "Se programo un micro-controlador arduino para hacer de controlador de un horno electrico permitiendo controlar su temperatura.",
     "Prototipo de gestion y control de prensas hidraulicas." :  "Prototipo de gestion y control de prensas hidraulicas.",
     "Se programo un micro-controlador arduino para gestionar la operacion y trabajo mediante sensores magneticos de una prensa hidraulica,utilizada en la fabricacion de puertas": "Se programo un micro-controlador arduino para gestionar la operacion y trabajo mediante sensores magneticos de una prensa hidraulica,utilizada en la fabricacion de puertas",
-    "proyectos": [
-             
-                {
-                    "id": 2,
-                    "nombre": "",
-                    "descripcion": "",
-                    "fecha_inicio": "2014-02-04",
-                    "fecha_fin": "2014-03-07",
-                    "estado": "Prototipo"
-                }
-            ],
-            "experiencia_laboral": [
-                {
-                    "id": 1,
-                    "nombre": "Maestro de robotica para los cursos de 5to y 6to grdo",
-                    "descripcion": "Trabaje como profesor en el Plan Nacional de Robótica  AREYA, el cual estaba contemplado para los alumnos 5to y 6to año de escuela primaria",
-                    "fecha_inicio": "2019-01-01",
-                    "fecha_fin": "2019-12-31"
-                },
-                {
-                    "id": 2,
-                    "nombre": "Desarrollador free-lance y luego como empleado en un software factory llamada Squad",
-                    "descripcion": "Como desarrollador de diferentes proyectos utilizando varias de mi perfil tecnologias",
-                    "fecha_inicio": "2020-01-01",
-                    "fecha_fin": "2021-06-01"
-                },
-                {
-                    "id": 3,
-                    "nombre": "Desarrollador empleado por Galicia-Seguros",
-                    "descripcion": "Actualmente trabajando para Galicia-Seguros en la creacion de plataformas orientas al manejo de seguros.",
-                    "fecha_inicio": "2020-01-01",
-                    "fecha_fin": ""
-                }
-            ],
+    "Maestro de robotica para los cursos de 5to y 6to grdo": "Maestro de robotica para los cursos de 5to y 6to grdo",
+    "Enseñé robótica a niños de 5to y 6to año en el Plan Nacional de Robótica AREYA. Fue una experiencia gratificante ver cómo se involucraban en la construcción y programación de robots. Desarrollé habilidades pedagógicas y aprendí a adaptar mi enseñanza a las necesidades de cada estudiante. Trabajar en AREYA fue una experiencia enriquecedora que me ayudó a crecer personal y profesionalmente." : "Enseñé robótica a niños de 5to y 6to año en el Plan Nacional de Robótica AREYA. Fue una experiencia gratificante ver cómo se involucraban en la construcción y programación de robots. Desarrollé habilidades pedagógicas y aprendí a adaptar mi enseñanza a las necesidades de cada estudiante. Trabajar en AREYA fue una experiencia enriquecedora que me ayudó a crecer personal y profesionalmente.",
+    "Desarrollador free-lance y luego como empleado en un software factory llamada Squad": "Desarrollador free-lance y luego como empleado en un software factory llamada Squad",
+    "Como desarrollador de diferentes proyectos utilizando varias de mi perfil tecnologias": "Como desarrollador de diferentes proyectos utilizando varias de mi perfil tecnologias",
+    "Desarrollador empleado por Galicia-Seguros": "Desarrollador empleado por Galicia-Seguros",
+    "Actualmente trabajando para Galicia-Seguros en la creacion de plataformas orientadas al manejo de seguros.": "Actualmente trabajando para Galicia-Seguros en la creacion de plataformas orientadas al manejo de seguros.",
+
             "experiencia_cursos": [
                 {
                     "id": 1,
