@@ -29,9 +29,9 @@ const Idiomas = ()=>{
 
     return(
         <div 
-        className="flex relative flex-col bg-White dark:bg-Dark bg-no-repeat bg-cover bg-center dark:text-white w-full min-h-screen items-center justify-between p-4 gap-4">
+        className="flex relative flex-col  bg-no-repeat bg-cover bg-center dark:text-white w-full min-h-screen items-center justify-between p-4 gap-4">
             <DarkMode/>
-            <h1 className="text-lg font-semibold">{t("Idiomas")}</h1>
+            <h1 className="font-light text-4xl flex md:w-full items-center after:content-[''] after:w-full after:h-1 after:border-b after:border-gray-500 after:border-1 after:hidden sm:after:inline-block after:mx-6 xl:after:mx-10 dark:after:border-gray-700">{t("Idiomas")}</h1>
             <div data-aos="zoom-in" data-aos-duration="1000" className="flex flex-wrap gap-14 justify-center p-4">
                 {datos}
             </div>

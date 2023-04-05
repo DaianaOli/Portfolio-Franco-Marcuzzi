@@ -141,7 +141,7 @@ function Experiencias() {
   return (
     <div className="relative flex flex-col font-serif w-full h-full items-center p-8 gap-6">
       <DarkMode/>
-      <p className="flex h-auto  text-6xl dark:text-white">
+      <p className="font-light text-4xl flex md:w-full items-center after:content-[''] after:w-full after:h-1 after:border-b after:border-gray-500 after:border-1 after:hidden sm:after:inline-block after:mx-6 xl:after:mx-10 dark:after:border-gray-700 dark:text-white">
         {t("Experiencia laboral")}
       </p>
       
