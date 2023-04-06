@@ -9,7 +9,7 @@ const Loading = () => {
     },[])
 
     return (
-        <div className="w-full text-white h-screen flex flex-col bg-black">
+        <div className="w-full h-screen flex flex-col bg-white text-black dark:bg-black dark:text-white">
             <div className="flex flex-col justify-end w-full h-3/6 ">
                 <h1 data-aos="zoom-in" data-aos-duration="2000" className="text-center  font-serif  text-9xl">FM</h1>
             </div>

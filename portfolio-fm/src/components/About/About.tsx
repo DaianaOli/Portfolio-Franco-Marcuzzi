@@ -8,8 +8,8 @@ const About = () => {
   const { t } = useTranslation();
 
   return (
-    <div id="about" className="flex relative flex-col items-center justify-center gap-2 p-6 w-full h-screen text-black dark:text-white">
-        <h1 className="font-light text-4xl flex md:w-full items-center after:content-[''] after:w-full after:h-1 after:border-b after:border-gray-500 after:border-1 after:hidden sm:after:inline-block after:mx-6 xl:after:mx-10 dark:after:border-gray-700">{t("Sobre mi")} </h1>
+    <div  className="page flex relative flex-col items-center justify-center gap-2 p-6 w-full h-screen text-black dark:text-white">
+        <h1 className="md:mt-16 font-light text-4xl flex md:w-full items-center after:content-[''] after:w-full after:h-1 after:border-b after:border-gray-500 after:border-1 after:hidden sm:after:inline-block after:mx-6 xl:after:mx-10 dark:after:border-gray-700">{t("Sobre mi")} </h1>
     <div className="flex flex-col sm:flex-wrap md:flex-row items-center justify-center ">
       <div className="flex flex-col gap-2 w-full md:w-1/2">
         <div data-aos="zoom-in-up" data-aos-duration="1000"
@@ -50,15 +50,15 @@ const About = () => {
           </button>
           </Link>
           <Link to="experiencia">
-          <button className="underline underline-offset-8" data-aos="fade-right" data-aos-delay="200">
+          <button className="underline underline-offset-8" data-aos="fade-right" data-aos-delay="150">
             {t("Experiencia laboral")}
           </button>
           </Link>
-          <Link to="cursos">
+          {/* <Link to="cursos">
           <button className="underline underline-offset-8" data-aos="fade-right" data-aos-delay="300">
             {t("Cursos")}
           </button>
-          </Link>
+          </Link> */}
           <a href="">
            <button className="flex items-center gap-2 justify-center bg-slate-500 hover:bg-slate-900 text-white font-bold py-2 px-4 rounded">
            {t("Descargar CV")}

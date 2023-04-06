@@ -4,7 +4,7 @@ import NavBar from "../NavBar/NavBar"
 import Proyectos from "../Proyects/Proyectos"
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useState } from "react";
+import {useRef, useState } from "react";
 import Loading from "../Loading/Loading";
 
 
@@ -12,15 +12,18 @@ AOS.init();
 
 const Pages = () => {
   const [loading, setLoading] = useState(true);
+
   const changeLoading = () => {
     setLoading(false);
     setTimeout(()=>{
       document.body.classList.remove("overflow-hidden")
     },800)
+    
   };
+ 
 
   return (
-    <div onWheel={changeLoading} onClick={changeLoading} className="">
+    <div onWheel={changeLoading} onClick={changeLoading}  >
         <div
           className={`fixed duration-1000 z-50 top-0 left-0 right-0 bottom-0 transition-transform ${
             loading ? "" : "transform -translate-y-full "
@@ -32,13 +35,13 @@ const Pages = () => {
           <div className="h-14">
           <NavBar />
         </div>
-        <div>
+        <div id="home">
           <LandingPage />
         </div>
-        <div>
+        <div id="proyectos">
           <Proyectos />
         </div>
-        <div className="h-screen">
+        <div id="about" className="h-screen">
           <About />
         </div>
           </div>

@@ -24,8 +24,8 @@ const LandingPage = () => {
   };
 
   return (
-    <section id="home">
-      <div className=" flex md:flex-row flex-col h-screen items-center  ">  
+    <section >
+      <div className="page flex md:flex-row flex-col h-screen items-center  ">  
       <div className='flex  w-screen md:w-2/3 '>
             <div className=" grid grid-cols-9 my-20 md:my-0 md:mx-5  lg:my-0  w-screen h-2/5 rounded-md overflow-hidden shadow-lg font-extrabold font-serif text-2xl sm:text-4xl lg:text-6xl group">
               {tablets.front.map((e, index) => (
