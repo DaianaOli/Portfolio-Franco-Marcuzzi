@@ -1,4 +1,5 @@
 import { data } from "../../data.json";
+import { useEffect } from "react";
 import DarkMode from "../DarkMode/DarkMode";
 import { useTranslation } from "react-i18next";
 
@@ -13,6 +14,18 @@ const Lenguajes = () => {
   const { lenguajes_programacion } = data;
   const { t } = useTranslation();
 
+  const scrollToTop = () => {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: "auto",
+    });
+  };
+
+  useEffect(() => {
+    scrollToTop();
+  }, []);
+
   const volver = () => {
     window.history.back();
   };
@@ -21,9 +34,11 @@ const Lenguajes = () => {
     <Lenguaje key={l.id} lenguaje={l} />
   ));
   return (
-    <div className="flex relative flex-col bg-no-repeat bg-cover bg-center dark:text-white  w-full h-screen items-center justify-between p-4 gap-4">
+    <div className="flex relative flex-col dark:text-white min-h-screen  w-full  items-center justify-between p-4 gap-4">
       <DarkMode />
-      <h1 className="font-light text-4xl flex md:w-full items-center after:content-[''] after:w-full after:h-1 after:border-b after:border-gray-500 after:border-1 after:hidden sm:after:inline-block after:mx-6 xl:after:mx-10 dark:after:border-gray-700">{t("Lenguajes de programacion")}</h1>
+      <h1 className="font-light text-4xl flex md:w-full items-center after:content-[''] after:w-full after:h-1 after:border-b after:border-gray-500 after:border-1 after:hidden sm:after:inline-block after:mx-6 xl:after:mx-10 dark:after:border-gray-700">
+        {t("Lenguajes de programacion")}
+      </h1>
       <div className="flex flex-wrap gap-14 justify-center p-4">{lenguaje}</div>
       <button
         className="flex items-center gap-2 justify-center bg-slate-500 hover:bg-slate-900 text-white font-bold py-2 px-4 rounded"
@@ -53,9 +68,7 @@ const Lenguaje = ({ lenguaje }: { lenguaje: Lenguaje }) => {
         />
       </div>
       <div>
-        <h2 className=" text-3xl font-semibold">
-          {lenguaje.nombre}
-        </h2>
+        <h2 className=" text-3xl font-semibold">{lenguaje.nombre}</h2>
         <p className="mt-2 ">{t(lenguaje.experiencia)}</p>
       </div>
     </div>
