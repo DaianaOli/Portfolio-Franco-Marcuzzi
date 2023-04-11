@@ -18,8 +18,12 @@ const Proyectos = () => {
     <Proyecto key={p.id} proyecto={p} />
   ));
   return (
-    <div  id="proyectos" className="page flex relative flex-col items-center justify-center gap-8 dark:text-white p-6">
-      <h1 className="md:mt-16 font-light text-4xl flex md:w-full items-center after:content-[''] after:w-full after:h-1 after:border-b after:border-gray-500 after:border-1 after:hidden sm:after:inline-block after:mx-6 xl:after:mx-10 dark:after:border-gray-700">{t("Proyectos")}</h1>
+    <div  id="proyectos" className="flex relative flex-col items-center justify-center gap-8 dark:text-white p-6 mt-16">
+      <div className="flex w-full justify-center items-center">
+        <span className="h-[1px] w-full rounded-3xl bg-gray-700" />
+        <h2 className="px-3 text-sm text-gray-900 dark:text-gray-700 font-light md:text-2xl lg:text-3xl xl:text-4xl">{t("Proyectos")}</h2>
+        <span className="h-[1px] w-full rounded-3xl bg-gray-700" />
+      </div>
       {proyecto}
     </div>
   );
@@ -39,7 +43,7 @@ const Proyecto = ({ proyecto }: { proyecto: Proyecto }) => {
       data-aos-duration="2000"
 
     >
-      <div className="flex w-1/2">
+      <div className="flex">
         <img
           className="w-full"
           src="https://img.interempresas.net/fotos/1965707.jpeg"

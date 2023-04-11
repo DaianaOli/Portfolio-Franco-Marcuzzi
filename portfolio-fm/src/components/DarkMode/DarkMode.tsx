@@ -40,6 +40,7 @@ const DarkMode = () => {
       isDarkMode ? 'opacity-0' : 'opacity-100'
     } absolute inset-y-0 right-0 w-6 h-6 my-auto mr-1 rounded-full transition-opacity`}
     src="https://cdn.icon-icons.com/icons2/32/PNG/256/sun_weather_2764.png"
+    // src="https://cdn-icons-png.flaticon.com/512/5510/5510705.png"
     alt="Sun icon"
   />
   <img
@@ -47,6 +48,7 @@ const DarkMode = () => {
       isDarkMode ? 'opacity-100' : 'opacity-0'
     } absolute inset-y-0 left-0 w-6 h-6 my-auto ml-1 rounded-full transition-opacity`}
     src="https://cdn.icon-icons.com/icons2/32/PNG/256/moon_night_midnight_2768.png"
+    // src="https://cdn-icons-png.flaticon.com/512/9892/9892234.png"
     alt="Moon icon"
   />
   

@@ -10,6 +10,7 @@ import Cursos from './components/Cursos/Cursos'
 import Proyectos from './components/Proyects/Proyectos'
 import Pages from './components/Pages/Pages'
 import background from './assets/noise-transparent.png'
+import Error from './components/Error/Error'
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
       <Route path='/lenguajes' element={<Lenguajes/>}/>
       <Route path='/experiencia' element={<Experiencia/>}/>
       <Route path='/cursos' element={<Cursos/>}/>
+      <Route path='*' element={<Error/>}/>
     </Routes>
     </div>
     </BrowserRouter>
