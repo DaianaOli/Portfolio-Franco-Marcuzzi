@@ -55,10 +55,10 @@ function NavBar() {
           </div>
           <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-between">
             <div className="flex items-center ">
-              <h1 className="text-black dark:text-white text-center font-serif  text-4xl block lg:hidden  w-auto ">
+              <h1 className="text-black dark:text-white text-center font-serif  text-4xl block lg:hidden  w-auto lg:text-5xl">
                 FM
               </h1>
-              <h1 className="text-black dark:text-white -center font-serif  text-4xl hidden lg:block  w-auto ">
+              <h1 className="text-black dark:text-white -center font-serif  text-4xl hidden lg:block  w-auto lg:text-5xl">
                 FM
               </h1>
             </div>
@@ -66,7 +66,7 @@ function NavBar() {
               <div className="flex h-full space-x-4 items-center text-2xl ">
                 <a
                   href="#home"
-                  className="hover:border-b border-black  dark:border-white 700 px-3    font-medium"
+                  className="hover:border-b border-black  dark:border-white 700 px-3  font-medium lg:text-4xl"
                   aria-current="page"
                 >
                   {" "}
@@ -75,14 +75,14 @@ function NavBar() {
 
                 <a
                   href="#proyectos"
-                  className="hover:border-b  border-black  dark:border-white 700 px-3   font-medium"
+                  className="hover:border-b  border-black  dark:border-white 700 px-3 font-medium lg:text-4xl"
                 >
                   {t("Proyectos")}
                 </a>
 
                 <a
                   href="#about"
-                  className="hover:border-b border-black  dark:border-white 700 px-3   font-medium"
+                  className="hover:border-b border-black  dark:border-white 700 px-3 font-medium lg:text-4xl"
                 >
                   {t("Sobre mi")}
                 </a>
