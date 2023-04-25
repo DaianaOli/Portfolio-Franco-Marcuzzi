@@ -9,8 +9,12 @@ function NavBar() {
   const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(true);
 
+  const closeMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <nav className="bg-gray-100 text-black dark:text-white dark:bg-zinc-800 fixed w-full  z-10 ">
+    <nav className="bg-gray-100 text-black  dark:text-white dark:bg-zinc-800 fixed w-full  z-10 ">
       <div className="w-full mx-auto px-2 sm:px-6 lg:px-8  ">
         <div className="relative flex items-center  h-16 ">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -19,7 +23,7 @@ function NavBar() {
               className="inline-flex items-center justify-center p-2 rounded-md text-dark dark:text-white  hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
               aria-controls="mobile-menu"
               aria-expanded="false"
-              onClick={() => setIsOpen(!isOpen)}
+              onClick={closeMenu}
             >
               <svg
                 className="block h-6 w-6"
@@ -66,7 +70,7 @@ function NavBar() {
               <div className="flex h-full space-x-4 items-center text-2xl ">
                 <a
                   href="#home"
-                  className="hover:border-b border-black  dark:border-white 700 px-3  font-medium lg:text-4xl"
+                  className="hover:border-b border-black  dark:border-white 700 px-3  font-medium lg:text-2xl"
                   aria-current="page"
                 >
                   {" "}
@@ -75,14 +79,14 @@ function NavBar() {
 
                 <a
                   href="#proyectos"
-                  className="hover:border-b  border-black  dark:border-white 700 px-3 font-medium lg:text-4xl"
+                  className="hover:border-b  border-black  dark:border-white 700 px-3 font-medium lg:text-2xl"
                 >
                   {t("Proyectos")}
                 </a>
 
                 <a
                   href="#about"
-                  className="hover:border-b border-black  dark:border-white 700 px-3 font-medium lg:text-4xl"
+                  className="hover:border-b border-black  dark:border-white 700 px-3 font-medium lg:text-2xl"
                 >
                   {t("Sobre mi")}
                 </a>
@@ -98,18 +102,21 @@ function NavBar() {
       <div className={`${isOpen ? "hidden" : "block"} sm:hidden`}>
         <div className="px-2 pt-2 pb-3 space-y-1">
           <a
+            onClick={closeMenu}
             href="#home"
             className="hover:border-b border-black  dark:border-white  block px-3 py-2 rounded-md text-base font-medium"
           >
             Menu
           </a>
           <a
+            onClick={closeMenu}
             href="#proyectos"
             className=" hover:border-b border-black  dark:border-white block px-3 py-2 rounded-md text-base font-medium"
           >
             {t("Proyectos")}
           </a>
           <a
+            onClick={closeMenu}
             href="#about"
             className="hover:border-b border-black  dark:border-white block px-3 py-2 rounded-md text-base font-medium"
           >
