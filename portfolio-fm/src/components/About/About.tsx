@@ -9,10 +9,12 @@ const About = () => {
 
   return (
     <div className=" flex relative flex-col items-center justify-center gap-2 p-6 w-full mt-16 text-black dark:text-white">
-     <div className="flex w-full justify-center items-center">
-        <span className="h-[1px] w-full rounded-3xl bg-gray-700" />
-        <h2 className="px-3 text-sm text-gray-900 dark:text-gray-700 font-light md:text-2xl lg:text-3xl xl:text-4xl">{t("Sobre mi")}</h2>
-        <span className="h-[1px] w-full rounded-3xl bg-gray-700" />
+      <div className="flex w-full justify-center items-center">
+        <span className="h-[1px] flex-grow rounded-3xl bg-black dark:bg-white" />
+        <h2 className="px-2 text-2xl text-gray-900 dark:text-white font-light md:text-4xl lg:text-5xl xl:text-6xl">
+          {t("Sobre mi")}
+        </h2>
+        <span className="h-[1px] flex-grow rounded-3xl bg-black dark:bg-white" />
       </div>
       <div className="flex flex-col sm:flex-wrap md:flex-row items-center justify-center ">
         <div className="flex flex-col gap-2 w-full md:w-1/2">

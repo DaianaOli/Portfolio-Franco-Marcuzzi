@@ -18,11 +18,16 @@ const Proyectos = () => {
     <Proyecto key={p.id} proyecto={p} />
   ));
   return (
-    <div  id="proyectos" className="flex relative flex-col items-center justify-center gap-8 dark:text-white p-6 mt-16">
+    <div
+      id="proyectos"
+      className="flex relative flex-col items-center justify-center gap-8 dark:text-white p-6 mt-16"
+    >
       <div className="flex w-full justify-center items-center">
-        <span className="h-[1px] w-full rounded-3xl bg-gray-700" />
-        <h2 className="px-3 text-sm text-gray-900 dark:text-gray-700 font-light md:text-2xl lg:text-3xl xl:text-4xl">{t("Proyectos")}</h2>
-        <span className="h-[1px] w-full rounded-3xl bg-gray-700" />
+        <span className="h-[1px] flex-grow rounded-3xl bg-black dark:bg-white" />
+        <h2 className="px-2 text-2xl text-gray-900 dark:text-white font-light md:text-4xl lg:text-5xl xl:text-6xl">
+          {t("Proyectos")}
+        </h2>
+        <span className="h-[1px] flex-grow rounded-3xl bg-black dark:bg-white" />
       </div>
       {proyecto}
     </div>
@@ -31,17 +36,16 @@ const Proyectos = () => {
 
 const Proyecto = ({ proyecto }: { proyecto: Proyecto }) => {
   const [verDetalles, setVerDetalles] = useState(false);
-  const {t} = useTranslation()
+  const { t } = useTranslation();
   const handleVerDetalles = () => {
     setVerDetalles(!verDetalles);
   };
 
   return (
-    <div 
+    <div
       className="flex flex-row items-center justify-center w-4/5 bg-slate-400/50 dark:bg-zinc-800/60"
-      data-aos={proyecto.id %2 ===0? 'fade-right':'fade-left'}
+      data-aos={proyecto.id % 2 === 0 ? "fade-right" : "fade-left"}
       data-aos-duration="2000"
-
     >
       <div className="flex">
         <img
@@ -52,13 +56,15 @@ const Proyecto = ({ proyecto }: { proyecto: Proyecto }) => {
       </div>
       <div className="w-1/2 flex flex-col items-center text-center justify-center">
         {verDetalles ? (
-          <h1 
-          data-aos="fade-down"
-          data-aos-duration="2000"
-          >{t(proyecto.descripcion)}</h1>
+          <h1 data-aos="fade-down" data-aos-duration="2000">
+            {t(proyecto.descripcion)}
+          </h1>
         ) : (
-          <div className="w-1/2 flex flex-col items-center text-center justify-center" data-aos="fade-down"
-          data-aos-duration="1000">
+          <div
+            className="w-1/2 flex flex-col items-center text-center justify-center"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+          >
             <h3>{t(proyecto.estado)}</h3>
             <h2>{proyecto.fecha_inicio}</h2>
             <h2>{proyecto.fecha_fin}</h2>
@@ -66,16 +72,11 @@ const Proyecto = ({ proyecto }: { proyecto: Proyecto }) => {
           </div>
         )}
 
-        <button onClick={handleVerDetalles}  className="underline underline-offset-8">
-          {verDetalles ? (
-            <h1>
-            {t("Ver menos")}
-            </h1>
-          ) : (
-            <h1>
-            {t("Ver mas")}
-            </h1>
-          )}
+        <button
+          onClick={handleVerDetalles}
+          className="underline underline-offset-8"
+        >
+          {verDetalles ? <h1>{t("Ver menos")}</h1> : <h1>{t("Ver mas")}</h1>}
         </button>
       </div>
     </div>
